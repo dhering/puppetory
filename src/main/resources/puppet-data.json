@@ -1,0 +1,4226 @@
+[
+    {
+        "name": "architecture",
+        "value": "amd64"
+    },
+    {
+        "name": "bios_release_date",
+        "value": "12\/02\/2011"
+    },
+    {
+        "name": "bios_vendor",
+        "value": "HP"
+    },
+    {
+        "name": "bios_version",
+        "value": "I24"
+    },
+    {
+        "name": "bitory_pci1",
+        "value": "Host bridge;5500 I\/O Hub to ESI Port;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci10",
+        "value": "Host bridge;Device 343b;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci11",
+        "value": "Host bridge;Device 343c;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci12",
+        "value": "Host bridge;Device 343d;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci13",
+        "value": "Host bridge;7500\/5520\/5500\/X58 Physical Layer Port 0;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci14",
+        "value": "Host bridge;7500\/5520\/5500 Physical Layer Port 1;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci15",
+        "value": "Host bridge;Device 341a;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci16",
+        "value": "Host bridge;Device 341c;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci17",
+        "value": "Host bridge;Device 341d;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci18",
+        "value": "Host bridge;Device 341e;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci19",
+        "value": "Host bridge;Device 341f;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci2",
+        "value": "PCI bridge;5520\/5500\/X58 I\/O Hub PCI Express Root Port 1;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci20",
+        "value": "Host bridge;Device 3439;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci21",
+        "value": "PIC;7500\/5520\/5500\/X58 I\/O Hub System Management Registers;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci22",
+        "value": "PIC;7500\/5520\/5500\/X58 I\/O Hub GPIO and Scratch Pad Registers;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci23",
+        "value": "PIC;7500\/5520\/5500\/X58 I\/O Hub Control Status and RAS Registers;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci24",
+        "value": "PCI bridge;82801JI (ICH10 Family) PCI Express Root Port 1;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci25",
+        "value": "USB controller;82801JI (ICH10 Family) USB UHCI Controller #1;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci26",
+        "value": "USB controller;82801JI (ICH10 Family) USB UHCI Controller #2;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci27",
+        "value": "USB controller;82801JI (ICH10 Family) USB UHCI Controller #3;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci28",
+        "value": "USB controller;82801JI (ICH10 Family) USB UHCI Controller #6;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci29",
+        "value": "USB controller;82801JI (ICH10 Family) USB2 EHCI Controller #1;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci3",
+        "value": "PCI bridge;5520\/5500\/X58 I\/O Hub PCI Express Root Port 2;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci30",
+        "value": "PCI bridge;82801 PCI Bridge;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci31",
+        "value": "ISA bridge;82801JIB (ICH10) LPC Interface Controller;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci32",
+        "value": "Graphic Card;ES1000;Advanced Micro Devices [AMD] nee ATI"
+    },
+    {
+        "name": "bitory_pci33",
+        "value": "System peripheral;Integrated Lights Out Controller;Compaq Computer Corporation"
+    },
+    {
+        "name": "bitory_pci34",
+        "value": "System peripheral;Integrated Lights Out  Processor;Compaq Computer Corporation"
+    },
+    {
+        "name": "bitory_pci35",
+        "value": "USB controller;Integrated Lights-Out Standard Virtual USB Controller;Hewlett-Packard Company"
+    },
+    {
+        "name": "bitory_pci36",
+        "value": "IPMI SMIC interface;Integrated Lights-Out Standard KCS Interface;Hewlett-Packard Company"
+    },
+    {
+        "name": "bitory_pci37",
+        "value": "Ethernet controller;NetXtreme II BCM57711E 10-Gigabit PCIe;Broadcom Corporation"
+    },
+    {
+        "name": "bitory_pci38",
+        "value": "Ethernet controller;NetXtreme II BCM57711E 10-Gigabit PCIe;Broadcom Corporation"
+    },
+    {
+        "name": "bitory_pci39",
+        "value": "PCI bridge;PES12N3A PCI Express Switch;Integrated Device Technology, Inc."
+    },
+    {
+        "name": "bitory_pci4",
+        "value": "PCI bridge;5520\/5500\/X58 I\/O Hub PCI Express Root Port 3;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci40",
+        "value": "PCI bridge;PES12N3A PCI Express Switch;Integrated Device Technology, Inc."
+    },
+    {
+        "name": "bitory_pci41",
+        "value": "PCI bridge;PES12N3A PCI Express Switch;Integrated Device Technology, Inc."
+    },
+    {
+        "name": "bitory_pci42",
+        "value": "PCI bridge;41210 [Lanai] Serial to Parallel PCI Bridge (A-Segment Bridge);Intel Corporation"
+    },
+    {
+        "name": "bitory_pci43",
+        "value": "PCI bridge;41210 [Lanai] Serial to Parallel PCI Bridge (B-Segment Bridge);Intel Corporation"
+    },
+    {
+        "name": "bitory_pci44",
+        "value": "I2O;StrongARM DC21285;Digital Equipment Corporation"
+    },
+    {
+        "name": "bitory_pci45",
+        "value": "PCI bridge;EPB PCI-Express to PCI-X Bridge;Broadcom"
+    },
+    {
+        "name": "bitory_pci46",
+        "value": "Ethernet controller;NetXtreme BCM5715S Gigabit Ethernet;Broadcom Corporation"
+    },
+    {
+        "name": "bitory_pci47",
+        "value": "Ethernet controller;NetXtreme BCM5715S Gigabit Ethernet;Broadcom Corporation"
+    },
+    {
+        "name": "bitory_pci48",
+        "value": "RAID bus controller;Smart Array G6 controllers;Hewlett-Packard Company"
+    },
+    {
+        "name": "bitory_pci5",
+        "value": "PCI bridge;5520\/5500\/X58 I\/O Hub PCI Express Root Port 7;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci6",
+        "value": "PCI bridge;5520\/5500\/X58 I\/O Hub PCI Express Root Port 8;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci7",
+        "value": "PCI bridge;7500\/5520\/5500\/X58 I\/O Hub PCI Express Root Port 9;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci8",
+        "value": "PCI bridge;7500\/5520\/5500\/X58 I\/O Hub PCI Express Root Port 10;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci9",
+        "value": "Host bridge;Device 343a;Intel Corporation"
+    },
+    {
+        "name": "bitory_pci_count",
+        "value": "48"
+    },
+    {
+        "name": "bitory_server_bemerkung",
+        "value": "Monitoring Core"
+    },
+    {
+        "name": "bitory_server_ibis_id",
+        "value": "5378"
+    },
+    {
+        "name": "bitory_server_kostenstelle",
+        "value": "79530"
+    },
+    {
+        "name": "bitory_server_lieferdatum",
+        "value": "01.10.2013"
+    },
+    {
+        "name": "bitory_server_status",
+        "value": "produktiv"
+    },
+    {
+        "name": "bitory_server_verwendungszweck",
+        "value": "Produktion"
+    },
+    {
+        "name": "bitory_servicesoftware1",
+        "value": "icinga;1.9.2"
+    },
+    {
+        "name": "bitory_servicesoftware2",
+        "value": "Nagios Business Process Addons;0.9.6"
+    },
+    {
+        "name": "bitory_servicesoftware3",
+        "value": "NSCA;2.7.2"
+    },
+    {
+        "name": "bitory_servicesoftware4",
+        "value": "chan_capi;1.1.6"
+    },
+    {
+        "name": "bitory_servicesoftware_count",
+        "value": "4"
+    },
+    {
+        "name": "bitory_software1",
+        "value": "acpi;1.6-1"
+    },
+    {
+        "name": "bitory_software10",
+        "value": "apache2.2-common;2.2.22-13+deb7u3"
+    },
+    {
+        "name": "bitory_software100",
+        "value": "fonts-liberation;1.07.2-6"
+    },
+    {
+        "name": "bitory_software101",
+        "value": "foomatic-db-compressed-ppds;20120523-1"
+    },
+    {
+        "name": "bitory_software102",
+        "value": "foomatic-db-engine;4.0.8-3"
+    },
+    {
+        "name": "bitory_software103",
+        "value": "foomatic-filters;4.0.17-1"
+    },
+    {
+        "name": "bitory_software104",
+        "value": "fping;3.2-1"
+    },
+    {
+        "name": "bitory_software105",
+        "value": "freeipmi-common;1.1.5-3"
+    },
+    {
+        "name": "bitory_software106",
+        "value": "freeipmi-tools;1.1.5-3"
+    },
+    {
+        "name": "bitory_software107",
+        "value": "freetds-common;0.91-2+deb7u1"
+    },
+    {
+        "name": "bitory_software108",
+        "value": "ftp;0.17-27"
+    },
+    {
+        "name": "bitory_software109",
+        "value": "fxload;0.0.20081013-1"
+    },
+    {
+        "name": "bitory_software11",
+        "value": "apt;0.9.7.9+deb7u5"
+    },
+    {
+        "name": "bitory_software110",
+        "value": "g++;4:4.7.2-1"
+    },
+    {
+        "name": "bitory_software111",
+        "value": "g++-4.7;4.7.2-5"
+    },
+    {
+        "name": "bitory_software112",
+        "value": "gawk;1:4.0.1+dfsg-2.1"
+    },
+    {
+        "name": "bitory_software113",
+        "value": "gcc;4:4.7.2-1"
+    },
+    {
+        "name": "bitory_software114",
+        "value": "gcc-4.7;4.7.2-5"
+    },
+    {
+        "name": "bitory_software115",
+        "value": "gcc-4.7-base:amd64;4.7.2-5"
+    },
+    {
+        "name": "bitory_software116",
+        "value": "geoip-database;20130213-1"
+    },
+    {
+        "name": "bitory_software117",
+        "value": "gettext;0.18.1.1-9"
+    },
+    {
+        "name": "bitory_software118",
+        "value": "gettext-base;0.18.1.1-9"
+    },
+    {
+        "name": "bitory_software119",
+        "value": "ghostscript;9.05~dfsg-6.3+deb7u1"
+    },
+    {
+        "name": "bitory_software12",
+        "value": "apt-listchanges;2.85.11"
+    },
+    {
+        "name": "bitory_software120",
+        "value": "ghostscript-cups;9.05~dfsg-6.3+deb7u1"
+    },
+    {
+        "name": "bitory_software121",
+        "value": "git;1:1.7.10.4-1+wheezy1"
+    },
+    {
+        "name": "bitory_software122",
+        "value": "git-man;1:1.7.10.4-1+wheezy1"
+    },
+    {
+        "name": "bitory_software123",
+        "value": "gnupg;1.4.12-7+deb7u6"
+    },
+    {
+        "name": "bitory_software124",
+        "value": "gnuplot;4.6.0-8"
+    },
+    {
+        "name": "bitory_software125",
+        "value": "gnuplot-nox;4.6.0-8"
+    },
+    {
+        "name": "bitory_software126",
+        "value": "gpgv;1.4.12-7+deb7u6"
+    },
+    {
+        "name": "bitory_software127",
+        "value": "grep;2.12-2"
+    },
+    {
+        "name": "bitory_software128",
+        "value": "groff;1.21-9"
+    },
+    {
+        "name": "bitory_software129",
+        "value": "groff-base;1.21-9"
+    },
+    {
+        "name": "bitory_software13",
+        "value": "apt-utils;0.9.7.9+deb7u5"
+    },
+    {
+        "name": "bitory_software130",
+        "value": "grub-common;1.99-27+deb7u2"
+    },
+    {
+        "name": "bitory_software131",
+        "value": "grub-pc;1.99-27+deb7u2"
+    },
+    {
+        "name": "bitory_software132",
+        "value": "grub-pc-bin;1.99-27+deb7u2"
+    },
+    {
+        "name": "bitory_software133",
+        "value": "grub2-common;1.99-27+deb7u2"
+    },
+    {
+        "name": "bitory_software134",
+        "value": "gsfonts;1:8.11+urwcyr1.0.7~pre44-4.2"
+    },
+    {
+        "name": "bitory_software135",
+        "value": "gzip;1.5-1.1"
+    },
+    {
+        "name": "bitory_software136",
+        "value": "heartbeat;1:3.0.5-3"
+    },
+    {
+        "name": "bitory_software137",
+        "value": "heirloom-mailx;12.5-2"
+    },
+    {
+        "name": "bitory_software138",
+        "value": "hicolor-icon-theme;0.12-1"
+    },
+    {
+        "name": "bitory_software139",
+        "value": "hiera;1.3.4-1puppetlabs1"
+    },
+    {
+        "name": "bitory_software14",
+        "value": "aptitude;0.6.8.2-1"
+    },
+    {
+        "name": "bitory_software140",
+        "value": "host;1:9.8.4.dfsg.P1-6+nmu2+deb7u2"
+    },
+    {
+        "name": "bitory_software141",
+        "value": "hostname;3.11"
+    },
+    {
+        "name": "bitory_software142",
+        "value": "hp-health;9.4.0.1.7-5."
+    },
+    {
+        "name": "bitory_software143",
+        "value": "hp-smh-templates;9.4.0.1.1-1."
+    },
+    {
+        "name": "bitory_software144",
+        "value": "hp-snmp-agents;9.4.0.1.5-4."
+    },
+    {
+        "name": "bitory_software145",
+        "value": "hpacucli;9.40.1-1."
+    },
+    {
+        "name": "bitory_software146",
+        "value": "hpsmh;7.3.0-2.2-1."
+    },
+    {
+        "name": "bitory_software147",
+        "value": "html2text;1.3.2a-15"
+    },
+    {
+        "name": "bitory_software148",
+        "value": "htop;1.0.1-1"
+    },
+    {
+        "name": "bitory_software149",
+        "value": "icinga-cgi-bin;1.11.6-1~debmon70+1"
+    },
+    {
+        "name": "bitory_software15",
+        "value": "aptitude-common;0.6.8.2-1"
+    },
+    {
+        "name": "bitory_software150",
+        "value": "icinga2;2.2.2+snapshot2014-12-26+1"
+    },
+    {
+        "name": "bitory_software151",
+        "value": "icinga2-bin;2.2.2+snapshot2014-12-26+1"
+    },
+    {
+        "name": "bitory_software152",
+        "value": "icinga2-classicui;2.2.2+snapshot2014-12-26+1"
+    },
+    {
+        "name": "bitory_software153",
+        "value": "icinga2-common;2.2.2+snapshot2014-12-26+1"
+    },
+    {
+        "name": "bitory_software154",
+        "value": "icinga2-doc;2.2.2+snapshot2014-12-26+1"
+    },
+    {
+        "name": "bitory_software155",
+        "value": "icinga2-ido-mysql;2.2.2+snapshot2014-12-26+1"
+    },
+    {
+        "name": "bitory_software156",
+        "value": "ifenslave-2.6;1.1.0-20"
+    },
+    {
+        "name": "bitory_software157",
+        "value": "ifupdown;0.7.8"
+    },
+    {
+        "name": "bitory_software158",
+        "value": "imagemagick;8:6.7.7.10-5+deb7u3"
+    },
+    {
+        "name": "bitory_software159",
+        "value": "imagemagick-common;8:6.7.7.10-5+deb7u3"
+    },
+    {
+        "name": "bitory_software16",
+        "value": "aspell;0.60.7~20110707-1"
+    },
+    {
+        "name": "bitory_software160",
+        "value": "info;4.13a.dfsg.1-10"
+    },
+    {
+        "name": "bitory_software161",
+        "value": "ingerman;20120607-1"
+    },
+    {
+        "name": "bitory_software162",
+        "value": "initramfs-tools;0.109.1"
+    },
+    {
+        "name": "bitory_software163",
+        "value": "initscripts;2.88dsf-41+deb7u1"
+    },
+    {
+        "name": "bitory_software164",
+        "value": "insserv;1.14.0-5"
+    },
+    {
+        "name": "bitory_software165",
+        "value": "install-info;4.13a.dfsg.1-10"
+    },
+    {
+        "name": "bitory_software166",
+        "value": "installation-report;2.49"
+    },
+    {
+        "name": "bitory_software167",
+        "value": "intltool-debian;0.35.0+20060710.1"
+    },
+    {
+        "name": "bitory_software168",
+        "value": "iproute;20120521-3+b3"
+    },
+    {
+        "name": "bitory_software169",
+        "value": "iptables;1.4.14-3.1"
+    },
+    {
+        "name": "bitory_software17",
+        "value": "aspell-de;20120607-1"
+    },
+    {
+        "name": "bitory_software170",
+        "value": "iputils-ping;3:20101006-1+b1"
+    },
+    {
+        "name": "bitory_software171",
+        "value": "isc-dhcp-client;4.2.2.dfsg.1-5+deb70u6"
+    },
+    {
+        "name": "bitory_software172",
+        "value": "isc-dhcp-common;4.2.2.dfsg.1-5+deb70u6"
+    },
+    {
+        "name": "bitory_software173",
+        "value": "iso-codes;3.41-1"
+    },
+    {
+        "name": "bitory_software174",
+        "value": "ispell;3.3.02-6"
+    },
+    {
+        "name": "bitory_software175",
+        "value": "javascript-common;7"
+    },
+    {
+        "name": "bitory_software176",
+        "value": "kbd;1.15.3-9"
+    },
+    {
+        "name": "bitory_software177",
+        "value": "keyboard-configuration;1.88"
+    },
+    {
+        "name": "bitory_software178",
+        "value": "klibc-utils;2.0.1-3.1"
+    },
+    {
+        "name": "bitory_software179",
+        "value": "kmod;9-3"
+    },
+    {
+        "name": "bitory_software18",
+        "value": "aspell-de-alt;1:2-28"
+    },
+    {
+        "name": "bitory_software180",
+        "value": "krb5-locales;1.10.1+dfsg-5+deb7u2"
+    },
+    {
+        "name": "bitory_software181",
+        "value": "ksh;93u+-1.2"
+    },
+    {
+        "name": "bitory_software182",
+        "value": "laptop-detect;0.13.7"
+    },
+    {
+        "name": "bitory_software183",
+        "value": "ldap-utils;2.4.31-1+nmu2"
+    },
+    {
+        "name": "bitory_software184",
+        "value": "less;444-4"
+    },
+    {
+        "name": "bitory_software185",
+        "value": "lgtoclnt;8.1.1.2"
+    },
+    {
+        "name": "bitory_software186",
+        "value": "lib32gcc1;1:4.7.2-5"
+    },
+    {
+        "name": "bitory_software187",
+        "value": "lib32stdc++6;4.7.2-5"
+    },
+    {
+        "name": "bitory_software188",
+        "value": "lib32z1;1:1.2.7.dfsg-13"
+    },
+    {
+        "name": "bitory_software189",
+        "value": "libacl1:amd64;2.2.51-8"
+    },
+    {
+        "name": "bitory_software19",
+        "value": "asterisk;1:1.8.13.1~dfsg1-3+deb7u3"
+    },
+    {
+        "name": "bitory_software190",
+        "value": "libalgorithm-diff-perl;1.19.02-2"
+    },
+    {
+        "name": "bitory_software191",
+        "value": "libalgorithm-diff-xs-perl;0.04-2+b1"
+    },
+    {
+        "name": "bitory_software192",
+        "value": "libalgorithm-merge-perl;0.08-2"
+    },
+    {
+        "name": "bitory_software193",
+        "value": "libapache2-mod-fcgid;1:2.3.6-1.2+deb7u1"
+    },
+    {
+        "name": "bitory_software194",
+        "value": "libapache2-mod-php5;5.4.4-14+deb7u14"
+    },
+    {
+        "name": "bitory_software195",
+        "value": "libapr1;1.4.6-3+deb7u1"
+    },
+    {
+        "name": "bitory_software196",
+        "value": "libaprutil1;1.4.1-3"
+    },
+    {
+        "name": "bitory_software197",
+        "value": "libaprutil1-dbd-sqlite3;1.4.1-3"
+    },
+    {
+        "name": "bitory_software198",
+        "value": "libaprutil1-ldap;1.4.1-3"
+    },
+    {
+        "name": "bitory_software199",
+        "value": "libapt-inst1.5:amd64;0.9.7.9+deb7u5"
+    },
+    {
+        "name": "bitory_software2",
+        "value": "acpi-support-base;0.140-5+deb7u3"
+    },
+    {
+        "name": "bitory_software20",
+        "value": "asterisk-config;1:1.8.13.1~dfsg1-3+deb7u3"
+    },
+    {
+        "name": "bitory_software200",
+        "value": "libapt-pkg4.12:amd64;0.9.7.9+deb7u5"
+    },
+    {
+        "name": "bitory_software201",
+        "value": "libasound2:amd64;1.0.25-4"
+    },
+    {
+        "name": "bitory_software202",
+        "value": "libaspell15;0.60.7~20110707-1"
+    },
+    {
+        "name": "bitory_software203",
+        "value": "libasprintf0c2:amd64;0.18.1.1-9"
+    },
+    {
+        "name": "bitory_software204",
+        "value": "libasterisk-agi-perl;1.01-2"
+    },
+    {
+        "name": "bitory_software205",
+        "value": "libatk1.0-0:amd64;2.4.0-2"
+    },
+    {
+        "name": "bitory_software206",
+        "value": "libatk1.0-data;2.4.0-2"
+    },
+    {
+        "name": "bitory_software207",
+        "value": "libattr1:amd64;1:2.4.46-8"
+    },
+    {
+        "name": "bitory_software208",
+        "value": "libaudio2:amd64;1.9.3-5wheezy1"
+    },
+    {
+        "name": "bitory_software209",
+        "value": "libaugeas-ruby1.8;0.4.1-1.1"
+    },
+    {
+        "name": "bitory_software21",
+        "value": "asterisk-core-sounds-en;1.4.22-1"
+    },
+    {
+        "name": "bitory_software210",
+        "value": "libaugeas0;0.10.0-1"
+    },
+    {
+        "name": "bitory_software211",
+        "value": "libavahi-client3:amd64;0.6.31-2"
+    },
+    {
+        "name": "bitory_software212",
+        "value": "libavahi-common-data:amd64;0.6.31-2"
+    },
+    {
+        "name": "bitory_software213",
+        "value": "libavahi-common3:amd64;0.6.31-2"
+    },
+    {
+        "name": "bitory_software214",
+        "value": "libbind9-80;1:9.8.4.dfsg.P1-6+nmu2+deb7u2"
+    },
+    {
+        "name": "bitory_software215",
+        "value": "libblas3;1.2.20110419-5"
+    },
+    {
+        "name": "bitory_software216",
+        "value": "libblas3gf;1.2.20110419-5"
+    },
+    {
+        "name": "bitory_software217",
+        "value": "libblkid1:amd64;2.20.1-5.3"
+    },
+    {
+        "name": "bitory_software218",
+        "value": "libboost-filesystem1.49.0;1.49.0-3.2"
+    },
+    {
+        "name": "bitory_software219",
+        "value": "libboost-iostreams1.49.0;1.49.0-3.2"
+    },
+    {
+        "name": "bitory_software22",
+        "value": "asterisk-core-sounds-en-gsm;1.4.22-1"
+    },
+    {
+        "name": "bitory_software220",
+        "value": "libboost-program-options1.49.0;1.49.0-3.2"
+    },
+    {
+        "name": "bitory_software221",
+        "value": "libboost-regex1.49.0;1.49.0-3.2"
+    },
+    {
+        "name": "bitory_software222",
+        "value": "libboost-system1.49.0;1.49.0-3.2"
+    },
+    {
+        "name": "bitory_software223",
+        "value": "libboost-thread1.49.0;1.49.0-3.2"
+    },
+    {
+        "name": "bitory_software224",
+        "value": "libbsd0:amd64;0.4.2-1"
+    },
+    {
+        "name": "bitory_software225",
+        "value": "libbz2-1.0:amd64;1.0.6-4"
+    },
+    {
+        "name": "bitory_software226",
+        "value": "libc-bin;2.13-38+deb7u4"
+    },
+    {
+        "name": "bitory_software227",
+        "value": "libc-dev-bin;2.13-38+deb7u4"
+    },
+    {
+        "name": "bitory_software228",
+        "value": "libc6:amd64;2.13-38+deb7u4"
+    },
+    {
+        "name": "bitory_software229",
+        "value": "libc6-dev:amd64;2.13-38+deb7u4"
+    },
+    {
+        "name": "bitory_software23",
+        "value": "asterisk-dahdi;1:1.8.13.1~dfsg1-3+deb7u3"
+    },
+    {
+        "name": "bitory_software230",
+        "value": "libc6-i386;2.13-38+deb7u4"
+    },
+    {
+        "name": "bitory_software231",
+        "value": "libcairo2:amd64;1.12.2-3"
+    },
+    {
+        "name": "bitory_software232",
+        "value": "libcap2:amd64;1:2.22-1.2"
+    },
+    {
+        "name": "bitory_software233",
+        "value": "libcapi20-3:amd64;1:3.25+dfsg1-3.3~deb7u1"
+    },
+    {
+        "name": "bitory_software234",
+        "value": "libcapi20-dev:amd64;1:3.25+dfsg1-3.3~deb7u1"
+    },
+    {
+        "name": "bitory_software235",
+        "value": "libcfg4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software236",
+        "value": "libcgi-simple-perl;1.113-2"
+    },
+    {
+        "name": "bitory_software237",
+        "value": "libcib1;1.1.7-1"
+    },
+    {
+        "name": "bitory_software238",
+        "value": "libclass-accessor-perl;0.34-1"
+    },
+    {
+        "name": "bitory_software239",
+        "value": "libclass-inspector-perl;1.27-1"
+    },
+    {
+        "name": "bitory_software24",
+        "value": "asterisk-dev;1:1.8.13.1~dfsg1-3+deb7u3"
+    },
+    {
+        "name": "bitory_software240",
+        "value": "libclass-isa-perl;0.36-3"
+    },
+    {
+        "name": "bitory_software241",
+        "value": "libcomerr2:amd64;1.42.5-1.1"
+    },
+    {
+        "name": "bitory_software242",
+        "value": "libcommon-sense-perl;3.6-1"
+    },
+    {
+        "name": "bitory_software243",
+        "value": "libconfdb4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software244",
+        "value": "libconfig-tiny-perl;2.14-1"
+    },
+    {
+        "name": "bitory_software245",
+        "value": "libconvert-asn1-perl;0.26-1"
+    },
+    {
+        "name": "bitory_software246",
+        "value": "libconvert-binhex-perl;1.119+pristine-3"
+    },
+    {
+        "name": "bitory_software247",
+        "value": "libcoroipcc4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software248",
+        "value": "libcoroipcs4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software249",
+        "value": "libcorosync4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software25",
+        "value": "asterisk-doc;1:1.8.13.1~dfsg1-3+deb7u3"
+    },
+    {
+        "name": "bitory_software250",
+        "value": "libcpg4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software251",
+        "value": "libcrack2;2.8.19-3"
+    },
+    {
+        "name": "bitory_software252",
+        "value": "libcrmcluster1;1.1.7-1"
+    },
+    {
+        "name": "bitory_software253",
+        "value": "libcrmcommon2;1.1.7-1"
+    },
+    {
+        "name": "bitory_software254",
+        "value": "libcroco3:amd64;0.6.6-2"
+    },
+    {
+        "name": "bitory_software255",
+        "value": "libcrypt-ssleay-perl;0.58-1"
+    },
+    {
+        "name": "bitory_software256",
+        "value": "libcups2:amd64;1.5.3-5+deb7u4"
+    },
+    {
+        "name": "bitory_software257",
+        "value": "libcupsimage2:amd64;1.5.3-5+deb7u4"
+    },
+    {
+        "name": "bitory_software258",
+        "value": "libcurl3:amd64;7.26.0-1+wheezy10"
+    },
+    {
+        "name": "bitory_software259",
+        "value": "libcurl3-gnutls:amd64;7.26.0-1+wheezy10"
+    },
+    {
+        "name": "bitory_software26",
+        "value": "asterisk-modules;1:1.8.13.1~dfsg1-3+deb7u3"
+    },
+    {
+        "name": "bitory_software260",
+        "value": "libcwidget3;0.5.16-3.4"
+    },
+    {
+        "name": "bitory_software261",
+        "value": "libdate-manip-perl;6.32-1"
+    },
+    {
+        "name": "bitory_software262",
+        "value": "libdatrie1:amd64;0.2.5-3"
+    },
+    {
+        "name": "bitory_software263",
+        "value": "libdb5.1:amd64;5.1.29-5"
+    },
+    {
+        "name": "bitory_software264",
+        "value": "libdbd-mysql;0.8.3-1+s-5+b1"
+    },
+    {
+        "name": "bitory_software265",
+        "value": "libdbd-mysql-perl;4.021-1+b1"
+    },
+    {
+        "name": "bitory_software266",
+        "value": "libdbi-dev;0.8.4-6"
+    },
+    {
+        "name": "bitory_software267",
+        "value": "libdbi-perl;1.622-1+deb7u1"
+    },
+    {
+        "name": "bitory_software268",
+        "value": "libdbi1;0.8.4-6"
+    },
+    {
+        "name": "bitory_software269",
+        "value": "libdbus-1-3:amd64;1.6.8-1+deb7u4"
+    },
+    {
+        "name": "bitory_software27",
+        "value": "asterisk-moh-opsound-gsm;2.03-1"
+    },
+    {
+        "name": "bitory_software270",
+        "value": "libdbus-glib-1-2:amd64;0.100.2-1"
+    },
+    {
+        "name": "bitory_software271",
+        "value": "libdevmapper1.02.1:amd64;2:1.02.74-8"
+    },
+    {
+        "name": "bitory_software272",
+        "value": "libdigest-hmac-perl;1.03+dfsg-1"
+    },
+    {
+        "name": "bitory_software273",
+        "value": "libdiscover2;2.1.2-5.2"
+    },
+    {
+        "name": "bitory_software274",
+        "value": "libdjvulibre-text;3.5.25.3-1"
+    },
+    {
+        "name": "bitory_software275",
+        "value": "libdjvulibre21;3.5.25.3-1"
+    },
+    {
+        "name": "bitory_software276",
+        "value": "libdns88;1:9.8.4.dfsg.P1-6+nmu2+deb7u2"
+    },
+    {
+        "name": "bitory_software277",
+        "value": "libdpkg-perl;1.16.15"
+    },
+    {
+        "name": "bitory_software278",
+        "value": "libdrm-intel1:amd64;2.4.40-1~deb7u2"
+    },
+    {
+        "name": "bitory_software279",
+        "value": "libdrm-nouveau1a:amd64;2.4.40-1~deb7u2"
+    },
+    {
+        "name": "bitory_software28",
+        "value": "asterisk-prompt-de;2.0-1.1"
+    },
+    {
+        "name": "bitory_software280",
+        "value": "libdrm-radeon1:amd64;2.4.40-1~deb7u2"
+    },
+    {
+        "name": "bitory_software281",
+        "value": "libdrm2:amd64;2.4.40-1~deb7u2"
+    },
+    {
+        "name": "bitory_software282",
+        "value": "libedit2:amd64;2.11-20080614-5"
+    },
+    {
+        "name": "bitory_software283",
+        "value": "libelf1;0.152-1+wheezy1"
+    },
+    {
+        "name": "bitory_software284",
+        "value": "libencode-locale-perl;1.03-1"
+    },
+    {
+        "name": "bitory_software285",
+        "value": "libept1.4.12;1.0.9"
+    },
+    {
+        "name": "bitory_software286",
+        "value": "liberror-perl;0.17-1"
+    },
+    {
+        "name": "bitory_software287",
+        "value": "libesmtp6;1.0.6-1+b1"
+    },
+    {
+        "name": "bitory_software288",
+        "value": "libevent-2.0-5:amd64;2.0.19-stable-3"
+    },
+    {
+        "name": "bitory_software289",
+        "value": "libevs4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software29",
+        "value": "asterisk-voicemail;1:1.8.13.1~dfsg1-3+deb7u3"
+    },
+    {
+        "name": "bitory_software290",
+        "value": "libexiv2-12;0.23-1"
+    },
+    {
+        "name": "bitory_software291",
+        "value": "libexpat1:amd64;2.1.0-1+deb7u1"
+    },
+    {
+        "name": "bitory_software292",
+        "value": "libexpat1-dev;2.1.0-1+deb7u1"
+    },
+    {
+        "name": "bitory_software293",
+        "value": "libfcgi-perl;0.74-1+b1"
+    },
+    {
+        "name": "bitory_software294",
+        "value": "libffi5:amd64;3.0.10-3"
+    },
+    {
+        "name": "bitory_software295",
+        "value": "libfile-basedir-perl;0.03-1"
+    },
+    {
+        "name": "bitory_software296",
+        "value": "libfile-desktopentry-perl;0.04-3"
+    },
+    {
+        "name": "bitory_software297",
+        "value": "libfile-fcntllock-perl;0.14-2"
+    },
+    {
+        "name": "bitory_software298",
+        "value": "libfile-listing-perl;6.04-1"
+    },
+    {
+        "name": "bitory_software299",
+        "value": "libfile-mimeinfo-perl;0.16-1"
+    },
+    {
+        "name": "bitory_software3",
+        "value": "acpid;1:2.0.16-1+deb7u1"
+    },
+    {
+        "name": "bitory_software30",
+        "value": "at;3.1.13-2"
+    },
+    {
+        "name": "bitory_software300",
+        "value": "libflac8:amd64;1.2.1-6"
+    },
+    {
+        "name": "bitory_software301",
+        "value": "libfont-afm-perl;1.20-1"
+    },
+    {
+        "name": "bitory_software302",
+        "value": "libfontconfig1:amd64;2.9.0-7.1"
+    },
+    {
+        "name": "bitory_software303",
+        "value": "libfontconfig1-dev;2.9.0-7.1"
+    },
+    {
+        "name": "bitory_software304",
+        "value": "libfontenc1:amd64;1:1.1.1-1"
+    },
+    {
+        "name": "bitory_software305",
+        "value": "libfreeipmi12;1.1.5-3"
+    },
+    {
+        "name": "bitory_software306",
+        "value": "libfreetype6:amd64;2.4.9-1.1"
+    },
+    {
+        "name": "bitory_software307",
+        "value": "libfreetype6-dev;2.4.9-1.1"
+    },
+    {
+        "name": "bitory_software308",
+        "value": "libfuse2:amd64;2.9.0-2+deb7u1"
+    },
+    {
+        "name": "bitory_software309",
+        "value": "libgc1c2;1:7.1-9.1"
+    },
+    {
+        "name": "bitory_software31",
+        "value": "augeas-lenses;0.10.0-1"
+    },
+    {
+        "name": "bitory_software310",
+        "value": "libgcc1:amd64;1:4.7.2-5"
+    },
+    {
+        "name": "bitory_software311",
+        "value": "libgcrypt11:amd64;1.5.0-5+deb7u1"
+    },
+    {
+        "name": "bitory_software312",
+        "value": "libgd2-xpm:amd64;2.0.36~rc1~dfsg-6.1"
+    },
+    {
+        "name": "bitory_software313",
+        "value": "libgd2-xpm-dev:amd64;2.0.36~rc1~dfsg-6.1"
+    },
+    {
+        "name": "bitory_software314",
+        "value": "libgdbm3:amd64;1.8.3-11"
+    },
+    {
+        "name": "bitory_software315",
+        "value": "libgdk-pixbuf2.0-0:amd64;2.26.1-1"
+    },
+    {
+        "name": "bitory_software316",
+        "value": "libgdk-pixbuf2.0-common;2.26.1-1"
+    },
+    {
+        "name": "bitory_software317",
+        "value": "libgeoip1;1.4.8+dfsg-3"
+    },
+    {
+        "name": "bitory_software318",
+        "value": "libgettextpo0:amd64;0.18.1.1-9"
+    },
+    {
+        "name": "bitory_software319",
+        "value": "libgfortran3:amd64;4.7.2-5"
+    },
+    {
+        "name": "bitory_software32",
+        "value": "autopoint;0.18.1.1-9"
+    },
+    {
+        "name": "bitory_software320",
+        "value": "libgl1-mesa-dri:amd64;8.0.5-4+deb7u2"
+    },
+    {
+        "name": "bitory_software321",
+        "value": "libgl1-mesa-glx:amd64;8.0.5-4+deb7u2"
+    },
+    {
+        "name": "bitory_software322",
+        "value": "libglapi-mesa:amd64;8.0.5-4+deb7u2"
+    },
+    {
+        "name": "bitory_software323",
+        "value": "libglib2.0-0:amd64;2.33.12+really2.32.4-5"
+    },
+    {
+        "name": "bitory_software324",
+        "value": "libglib2.0-data;2.33.12+really2.32.4-5"
+    },
+    {
+        "name": "bitory_software325",
+        "value": "libglu1-mesa:amd64;8.0.5-4+deb7u2"
+    },
+    {
+        "name": "bitory_software326",
+        "value": "libgmime-2.6-0;2.6.10-1"
+    },
+    {
+        "name": "bitory_software327",
+        "value": "libgmp10:amd64;2:5.0.5+dfsg-2"
+    },
+    {
+        "name": "bitory_software328",
+        "value": "libgnutls-openssl27:amd64;2.12.20-8+deb7u2"
+    },
+    {
+        "name": "bitory_software329",
+        "value": "libgnutls26:amd64;2.12.20-8+deb7u2"
+    },
+    {
+        "name": "bitory_software33",
+        "value": "base-files;7.1wheezy6"
+    },
+    {
+        "name": "bitory_software330",
+        "value": "libgomp1:amd64;4.7.2-5"
+    },
+    {
+        "name": "bitory_software331",
+        "value": "libgpg-error0:amd64;1.10-3.1"
+    },
+    {
+        "name": "bitory_software332",
+        "value": "libgpgme11;1.2.0-1.4+deb7u1"
+    },
+    {
+        "name": "bitory_software333",
+        "value": "libgpm2:amd64;1.20.4-6"
+    },
+    {
+        "name": "bitory_software334",
+        "value": "libgs9;9.05~dfsg-6.3+deb7u1"
+    },
+    {
+        "name": "bitory_software335",
+        "value": "libgs9-common;9.05~dfsg-6.3+deb7u1"
+    },
+    {
+        "name": "bitory_software336",
+        "value": "libgsm1:amd64;1.0.13-4"
+    },
+    {
+        "name": "bitory_software337",
+        "value": "libgssapi-krb5-2:amd64;1.10.1+dfsg-5+deb7u2"
+    },
+    {
+        "name": "bitory_software338",
+        "value": "libgssglue1:amd64;0.4-2"
+    },
+    {
+        "name": "bitory_software339",
+        "value": "libgtk2.0-0:amd64;2.24.10-2"
+    },
+    {
+        "name": "bitory_software34",
+        "value": "base-passwd;3.5.26"
+    },
+    {
+        "name": "bitory_software340",
+        "value": "libgtk2.0-bin;2.24.10-2"
+    },
+    {
+        "name": "bitory_software341",
+        "value": "libgtk2.0-common;2.24.10-2"
+    },
+    {
+        "name": "bitory_software342",
+        "value": "libheartbeat2;1:3.0.5-3"
+    },
+    {
+        "name": "bitory_software343",
+        "value": "libhtml-form-perl;6.03-1"
+    },
+    {
+        "name": "bitory_software344",
+        "value": "libhtml-format-perl;2.10-1"
+    },
+    {
+        "name": "bitory_software345",
+        "value": "libhtml-parser-perl;3.69-2"
+    },
+    {
+        "name": "bitory_software346",
+        "value": "libhtml-tagset-perl;3.20-2"
+    },
+    {
+        "name": "bitory_software347",
+        "value": "libhtml-tree-perl;5.02-1"
+    },
+    {
+        "name": "bitory_software348",
+        "value": "libhttp-cookies-perl;6.00-2"
+    },
+    {
+        "name": "bitory_software349",
+        "value": "libhttp-daemon-perl;6.01-1"
+    },
+    {
+        "name": "bitory_software35",
+        "value": "bash;4.2+dfsg-0.1+deb7u3"
+    },
+    {
+        "name": "bitory_software350",
+        "value": "libhttp-date-perl;6.02-1"
+    },
+    {
+        "name": "bitory_software351",
+        "value": "libhttp-message-perl;6.03-1"
+    },
+    {
+        "name": "bitory_software352",
+        "value": "libhttp-negotiate-perl;6.00-2"
+    },
+    {
+        "name": "bitory_software353",
+        "value": "libical0;0.48-2"
+    },
+    {
+        "name": "bitory_software354",
+        "value": "libice6:amd64;2:1.0.8-2"
+    },
+    {
+        "name": "bitory_software355",
+        "value": "libicu48:amd64;4.8.1.1-12+deb7u1"
+    },
+    {
+        "name": "bitory_software356",
+        "value": "libidn11:amd64;1.25-2"
+    },
+    {
+        "name": "bitory_software357",
+        "value": "libijs-0.35;0.35-8"
+    },
+    {
+        "name": "bitory_software358",
+        "value": "libiksemel3;1.2-4"
+    },
+    {
+        "name": "bitory_software359",
+        "value": "libilmbase6;1.0.1-4"
+    },
+    {
+        "name": "bitory_software36",
+        "value": "bash-completion;1:2.0-1"
+    },
+    {
+        "name": "bitory_software360",
+        "value": "libio-pty-perl;1:1.08-1+b2"
+    },
+    {
+        "name": "bitory_software361",
+        "value": "libio-socket-ip-perl;0.16-2"
+    },
+    {
+        "name": "bitory_software362",
+        "value": "libio-socket-ssl-perl;1.76-2"
+    },
+    {
+        "name": "bitory_software363",
+        "value": "libio-stringy-perl;2.110-5"
+    },
+    {
+        "name": "bitory_software364",
+        "value": "libipc-run-perl;0.92-1"
+    },
+    {
+        "name": "bitory_software365",
+        "value": "libipmiconsole2;1.1.5-3"
+    },
+    {
+        "name": "bitory_software366",
+        "value": "libipmidetect0;1.1.5-3"
+    },
+    {
+        "name": "bitory_software367",
+        "value": "libisc84;1:9.8.4.dfsg.P1-6+nmu2+deb7u2"
+    },
+    {
+        "name": "bitory_software368",
+        "value": "libisccc80;1:9.8.4.dfsg.P1-6+nmu2+deb7u2"
+    },
+    {
+        "name": "bitory_software369",
+        "value": "libisccfg82;1:9.8.4.dfsg.P1-6+nmu2+deb7u2"
+    },
+    {
+        "name": "bitory_software37",
+        "value": "bc;1.06.95-2+b1"
+    },
+    {
+        "name": "bitory_software370",
+        "value": "libitm1:amd64;4.7.2-5"
+    },
+    {
+        "name": "bitory_software371",
+        "value": "libjack-jackd2-0:amd64;1.9.8~dfsg.4+20120529git007cdc37-5"
+    },
+    {
+        "name": "bitory_software372",
+        "value": "libjasper1:amd64;1.900.1-13"
+    },
+    {
+        "name": "bitory_software373",
+        "value": "libjbig0:amd64;2.0-2+deb7u1"
+    },
+    {
+        "name": "bitory_software374",
+        "value": "libjbig2dec0;0.11+20120125-1"
+    },
+    {
+        "name": "bitory_software375",
+        "value": "libjpeg62:amd64;6b1-3+deb7u1"
+    },
+    {
+        "name": "bitory_software376",
+        "value": "libjpeg8:amd64;8d-1+deb7u1"
+    },
+    {
+        "name": "bitory_software377",
+        "value": "libjpeg8-dev:amd64;8d-1+deb7u1"
+    },
+    {
+        "name": "bitory_software378",
+        "value": "libjs-jquery;1.7.2+dfsg-1"
+    },
+    {
+        "name": "bitory_software379",
+        "value": "libjs-jquery-ui;1.10.1+dfsg-1~debmon70+1"
+    },
+    {
+        "name": "bitory_software38",
+        "value": "bind9-host;1:9.8.4.dfsg.P1-6+nmu2+deb7u2"
+    },
+    {
+        "name": "bitory_software380",
+        "value": "libjson-xs-perl;2.320-1+b1"
+    },
+    {
+        "name": "bitory_software381",
+        "value": "libk5crypto3:amd64;1.10.1+dfsg-5+deb7u2"
+    },
+    {
+        "name": "bitory_software382",
+        "value": "libkeyutils1:amd64;1.5.5-3"
+    },
+    {
+        "name": "bitory_software383",
+        "value": "libklibc;2.0.1-3.1"
+    },
+    {
+        "name": "bitory_software384",
+        "value": "libkmod2:amd64;9-3"
+    },
+    {
+        "name": "bitory_software385",
+        "value": "libkrb5-3:amd64;1.10.1+dfsg-5+deb7u2"
+    },
+    {
+        "name": "bitory_software386",
+        "value": "libkrb5support0:amd64;1.10.1+dfsg-5+deb7u2"
+    },
+    {
+        "name": "bitory_software387",
+        "value": "liblcms1:amd64;1.19.dfsg-1.2"
+    },
+    {
+        "name": "bitory_software388",
+        "value": "liblcms2-2:amd64;2.2+git20110628-2.2+deb7u1"
+    },
+    {
+        "name": "bitory_software389",
+        "value": "libldap-2.4-2:amd64;2.4.31-1+nmu2"
+    },
+    {
+        "name": "bitory_software39",
+        "value": "binutils;2.22-8"
+    },
+    {
+        "name": "bitory_software390",
+        "value": "liblensfun-data;0.2.5-2"
+    },
+    {
+        "name": "bitory_software391",
+        "value": "liblensfun0;0.2.5-2"
+    },
+    {
+        "name": "bitory_software392",
+        "value": "liblinear-tools;1.8+dfsg-1"
+    },
+    {
+        "name": "bitory_software393",
+        "value": "liblinear1;1.8+dfsg-1"
+    },
+    {
+        "name": "bitory_software394",
+        "value": "liblocale-gettext-perl;1.05-7+b1"
+    },
+    {
+        "name": "bitory_software395",
+        "value": "liblockfile-bin;1.09-5"
+    },
+    {
+        "name": "bitory_software396",
+        "value": "liblockfile1:amd64;1.09-5"
+    },
+    {
+        "name": "bitory_software397",
+        "value": "liblogsys4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software398",
+        "value": "liblqr-1-0:amd64;0.4.1-2"
+    },
+    {
+        "name": "bitory_software399",
+        "value": "liblrm2;1.0.9+hg2665-1"
+    },
+    {
+        "name": "bitory_software4",
+        "value": "adduser;3.113+nmu3"
+    },
+    {
+        "name": "bitory_software40",
+        "value": "bit-check-hpasm;4.5.2-1"
+    },
+    {
+        "name": "bitory_software400",
+        "value": "libltdl7:amd64;2.4.2-1.1"
+    },
+    {
+        "name": "bitory_software401",
+        "value": "liblua5.1-0:amd64;5.1.5-4+deb7u1"
+    },
+    {
+        "name": "bitory_software402",
+        "value": "liblwp-mediatypes-perl;6.02-1"
+    },
+    {
+        "name": "bitory_software403",
+        "value": "liblwp-protocol-https-perl;6.03-1"
+    },
+    {
+        "name": "bitory_software404",
+        "value": "liblwp-useragent-determined-perl;1.06-1"
+    },
+    {
+        "name": "bitory_software405",
+        "value": "liblwres80;1:9.8.4.dfsg.P1-6+nmu2+deb7u2"
+    },
+    {
+        "name": "bitory_software406",
+        "value": "liblzma5:amd64;5.1.1alpha+20120614-2"
+    },
+    {
+        "name": "bitory_software407",
+        "value": "libmagic1:amd64;5.11-2+deb7u5"
+    },
+    {
+        "name": "bitory_software408",
+        "value": "libmagickcore5:amd64;8:6.7.7.10-5+deb7u3"
+    },
+    {
+        "name": "bitory_software409",
+        "value": "libmagickcore5-extra:amd64;8:6.7.7.10-5+deb7u3"
+    },
+    {
+        "name": "bitory_software41",
+        "value": "bitory3;1.1-1"
+    },
+    {
+        "name": "bitory_software410",
+        "value": "libmagickwand5:amd64;8:6.7.7.10-5+deb7u3"
+    },
+    {
+        "name": "bitory_software411",
+        "value": "libmail-imapclient-perl;3.31-2"
+    },
+    {
+        "name": "bitory_software412",
+        "value": "libmail-sendmail-perl;0.79.16-1"
+    },
+    {
+        "name": "bitory_software413",
+        "value": "libmailtools-perl;2.09-1"
+    },
+    {
+        "name": "bitory_software414",
+        "value": "libmath-bigint-perl;1.997-1"
+    },
+    {
+        "name": "bitory_software415",
+        "value": "libmath-calc-units-perl;1.07-1"
+    },
+    {
+        "name": "bitory_software416",
+        "value": "libmcrypt-dev;2.5.8-3.1"
+    },
+    {
+        "name": "bitory_software417",
+        "value": "libmcrypt4;2.5.8-3.1"
+    },
+    {
+        "name": "bitory_software418",
+        "value": "libmemcached10:amd64;1.0.8-1"
+    },
+    {
+        "name": "bitory_software419",
+        "value": "libmime-tools-perl;5.503-1"
+    },
+    {
+        "name": "bitory_software42",
+        "value": "bsd-mailx;8.1.2-0.20111106cvs-1"
+    },
+    {
+        "name": "bitory_software420",
+        "value": "libmng1:amd64;1.0.10-3"
+    },
+    {
+        "name": "bitory_software421",
+        "value": "libmodule-implementation-perl;0.06-1"
+    },
+    {
+        "name": "bitory_software422",
+        "value": "libmodule-runtime-perl;0.013-1"
+    },
+    {
+        "name": "bitory_software423",
+        "value": "libmount1;2.20.1-5.3"
+    },
+    {
+        "name": "bitory_software424",
+        "value": "libmpc2:amd64;0.9-4"
+    },
+    {
+        "name": "bitory_software425",
+        "value": "libmpfr4:amd64;3.1.0-5"
+    },
+    {
+        "name": "bitory_software426",
+        "value": "libmysql++-dev;3.1.0-2+b1"
+    },
+    {
+        "name": "bitory_software427",
+        "value": "libmysql++3;3.1.0-2+b1"
+    },
+    {
+        "name": "bitory_software428",
+        "value": "libmysqlclient-dev;5.5.38-0+wheezy1"
+    },
+    {
+        "name": "bitory_software429",
+        "value": "libmysqlclient18:amd64;5.5.38-0+wheezy1"
+    },
+    {
+        "name": "bitory_software43",
+        "value": "bsdmainutils;9.0.3"
+    },
+    {
+        "name": "bitory_software430",
+        "value": "libnagios-plugin-perl;0.36-1"
+    },
+    {
+        "name": "bitory_software431",
+        "value": "libncurses5:amd64;5.9-10"
+    },
+    {
+        "name": "bitory_software432",
+        "value": "libncursesw5:amd64;5.9-10"
+    },
+    {
+        "name": "bitory_software433",
+        "value": "libneon27-gnutls;0.29.6-3"
+    },
+    {
+        "name": "bitory_software434",
+        "value": "libnet-daemon-perl;0.48-1"
+    },
+    {
+        "name": "bitory_software435",
+        "value": "libnet-dbus-perl;1.0.0-1+b1"
+    },
+    {
+        "name": "bitory_software436",
+        "value": "libnet-dns-perl;0.66-2+b2"
+    },
+    {
+        "name": "bitory_software437",
+        "value": "libnet-http-perl;6.03-2"
+    },
+    {
+        "name": "bitory_software438",
+        "value": "libnet-ip-perl;1.25-3"
+    },
+    {
+        "name": "bitory_software439",
+        "value": "libnet-ldap-perl;1:0.4400-1"
+    },
+    {
+        "name": "bitory_software44",
+        "value": "bsdutils;1:2.20.1-5.3"
+    },
+    {
+        "name": "bitory_software440",
+        "value": "libnet-smtp-tls-perl;0.12-1"
+    },
+    {
+        "name": "bitory_software441",
+        "value": "libnet-snmp-perl;6.0.1-2"
+    },
+    {
+        "name": "bitory_software442",
+        "value": "libnet-ssleay-perl;1.48-1+b1"
+    },
+    {
+        "name": "bitory_software443",
+        "value": "libnet1;1.1.4-2.1"
+    },
+    {
+        "name": "bitory_software444",
+        "value": "libnetpbm10;2:10.0-15+b1"
+    },
+    {
+        "name": "bitory_software445",
+        "value": "libnewt0.52;0.52.14-11.1"
+    },
+    {
+        "name": "bitory_software446",
+        "value": "libnfnetlink0;1.0.0-1.1"
+    },
+    {
+        "name": "bitory_software447",
+        "value": "libnfsidmap2:amd64;0.25-4"
+    },
+    {
+        "name": "bitory_software448",
+        "value": "libnspr4:amd64;2:4.9.2-1+deb7u2"
+    },
+    {
+        "name": "bitory_software449",
+        "value": "libnspr4-0d:amd64;2:4.9.2-1+deb7u2"
+    },
+    {
+        "name": "bitory_software45",
+        "value": "busybox;1:1.20.0-7"
+    },
+    {
+        "name": "bitory_software450",
+        "value": "libnss3:amd64;2:3.14.5-1+deb7u2"
+    },
+    {
+        "name": "bitory_software451",
+        "value": "libnss3-1d:amd64;2:3.14.5-1+deb7u2"
+    },
+    {
+        "name": "bitory_software452",
+        "value": "libodbc1:amd64;2.2.14p2-5"
+    },
+    {
+        "name": "bitory_software453",
+        "value": "libogg0:amd64;1.3.0-4"
+    },
+    {
+        "name": "bitory_software454",
+        "value": "libonig2;5.9.1-1"
+    },
+    {
+        "name": "bitory_software455",
+        "value": "liboop4;1.0-9"
+    },
+    {
+        "name": "bitory_software456",
+        "value": "libopencore-amrnb0:amd64;0.1.3-2"
+    },
+    {
+        "name": "bitory_software457",
+        "value": "libopencore-amrwb0:amd64;0.1.3-2"
+    },
+    {
+        "name": "bitory_software458",
+        "value": "libopenexr6;1.6.1-6"
+    },
+    {
+        "name": "bitory_software459",
+        "value": "libopenhpi2;2.14.1-1.2"
+    },
+    {
+        "name": "bitory_software46",
+        "value": "bzip2;1.0.6-4"
+    },
+    {
+        "name": "bitory_software460",
+        "value": "libopenipmi0;2.0.16-1.3"
+    },
+    {
+        "name": "bitory_software461",
+        "value": "libopenjpeg2:amd64;1.3+dfsg-4.8"
+    },
+    {
+        "name": "bitory_software462",
+        "value": "libopenr2-3;1.3.2-1.1"
+    },
+    {
+        "name": "bitory_software463",
+        "value": "libossp-uuid-perl;1.6.2-1.3"
+    },
+    {
+        "name": "bitory_software464",
+        "value": "libossp-uuid16;1.6.2-1.3"
+    },
+    {
+        "name": "bitory_software465",
+        "value": "libp11-kit0:amd64;0.12-3"
+    },
+    {
+        "name": "bitory_software466",
+        "value": "libpam-cracklib:amd64;1.1.3-7.1"
+    },
+    {
+        "name": "bitory_software467",
+        "value": "libpam-modules:amd64;1.1.3-7.1"
+    },
+    {
+        "name": "bitory_software468",
+        "value": "libpam-modules-bin;1.1.3-7.1"
+    },
+    {
+        "name": "bitory_software469",
+        "value": "libpam-runtime;1.1.3-7.1"
+    },
+    {
+        "name": "bitory_software47",
+        "value": "ca-certificates;20130119"
+    },
+    {
+        "name": "bitory_software470",
+        "value": "libpam0g:amd64;1.1.3-7.1"
+    },
+    {
+        "name": "bitory_software471",
+        "value": "libpango1.0-0:amd64;1.30.0-1"
+    },
+    {
+        "name": "bitory_software472",
+        "value": "libpaper-utils;1.1.24+nmu2"
+    },
+    {
+        "name": "bitory_software473",
+        "value": "libpaper1:amd64;1.1.24+nmu2"
+    },
+    {
+        "name": "bitory_software474",
+        "value": "libparams-classify-perl;0.013-4"
+    },
+    {
+        "name": "bitory_software475",
+        "value": "libparams-validate-perl;1.06-1"
+    },
+    {
+        "name": "bitory_software476",
+        "value": "libparse-recdescent-perl;1.967009+dfsg-1"
+    },
+    {
+        "name": "bitory_software477",
+        "value": "libpcap0.8:amd64;1.3.0-1"
+    },
+    {
+        "name": "bitory_software478",
+        "value": "libpci3:amd64;1:3.1.9-6"
+    },
+    {
+        "name": "bitory_software479",
+        "value": "libpciaccess0:amd64;0.13.1-2"
+    },
+    {
+        "name": "bitory_software48",
+        "value": "capiutils;1:3.25+dfsg1-3.3~deb7u1"
+    },
+    {
+        "name": "bitory_software480",
+        "value": "libpcre3:amd64;1:8.30-5"
+    },
+    {
+        "name": "bitory_software481",
+        "value": "libpe-rules2;1.1.7-1"
+    },
+    {
+        "name": "bitory_software482",
+        "value": "libpe-status3;1.1.7-1"
+    },
+    {
+        "name": "bitory_software483",
+        "value": "libpengine3;1.1.7-1"
+    },
+    {
+        "name": "bitory_software484",
+        "value": "libperl5.14;5.14.2-21+deb7u1"
+    },
+    {
+        "name": "bitory_software485",
+        "value": "libpils2;1.0.9+hg2665-1"
+    },
+    {
+        "name": "bitory_software486",
+        "value": "libpipeline1:amd64;1.2.1-1"
+    },
+    {
+        "name": "bitory_software487",
+        "value": "libpixman-1-0:amd64;0.26.0-4+deb7u1"
+    },
+    {
+        "name": "bitory_software488",
+        "value": "libpload4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software489",
+        "value": "libplrpc-perl;0.2020-2"
+    },
+    {
+        "name": "bitory_software49",
+        "value": "chkrootkit;0.49-4.1+deb7u2"
+    },
+    {
+        "name": "bitory_software490",
+        "value": "libplumb2;1.0.9+hg2665-1"
+    },
+    {
+        "name": "bitory_software491",
+        "value": "libplumbgpl2;1.0.9+hg2665-1"
+    },
+    {
+        "name": "bitory_software492",
+        "value": "libpng12-0:amd64;1.2.49-1"
+    },
+    {
+        "name": "bitory_software493",
+        "value": "libpng12-dev;1.2.49-1"
+    },
+    {
+        "name": "bitory_software494",
+        "value": "libpod-plainer-perl;1.03-1"
+    },
+    {
+        "name": "bitory_software495",
+        "value": "libpoppler19:amd64;0.18.4-6"
+    },
+    {
+        "name": "bitory_software496",
+        "value": "libpopt0:amd64;1.16-7"
+    },
+    {
+        "name": "bitory_software497",
+        "value": "libpq5;9.1.13-0wheezy1"
+    },
+    {
+        "name": "bitory_software498",
+        "value": "libpri1.4;1.4.12-2"
+    },
+    {
+        "name": "bitory_software499",
+        "value": "libprocps0:amd64;1:3.3.3-3"
+    },
+    {
+        "name": "bitory_software5",
+        "value": "alien;8.87"
+    },
+    {
+        "name": "bitory_software50",
+        "value": "cluster-glue;1.0.9+hg2665-1"
+    },
+    {
+        "name": "bitory_software500",
+        "value": "libpth20;2.0.7-16"
+    },
+    {
+        "name": "bitory_software501",
+        "value": "libpthread-stubs0:amd64;0.3-3"
+    },
+    {
+        "name": "bitory_software502",
+        "value": "libpthread-stubs0-dev:amd64;0.3-3"
+    },
+    {
+        "name": "bitory_software503",
+        "value": "libqdbm14;1.8.78-2"
+    },
+    {
+        "name": "bitory_software504",
+        "value": "libqpidcommon2:amd64;0.16-6+deb7u1"
+    },
+    {
+        "name": "bitory_software505",
+        "value": "libqpidtypes1:amd64;0.16-6+deb7u1"
+    },
+    {
+        "name": "bitory_software506",
+        "value": "libqt4-network:amd64;4:4.8.2+dfsg-11"
+    },
+    {
+        "name": "bitory_software507",
+        "value": "libqt4-opengl:amd64;4:4.8.2+dfsg-11"
+    },
+    {
+        "name": "bitory_software508",
+        "value": "libqt4-sql:amd64;4:4.8.2+dfsg-11"
+    },
+    {
+        "name": "bitory_software509",
+        "value": "libqt4-sql-mysql:amd64;4:4.8.2+dfsg-11"
+    },
+    {
+        "name": "bitory_software51",
+        "value": "console-setup;1.88"
+    },
+    {
+        "name": "bitory_software510",
+        "value": "libqt4-sql-sqlite:amd64;4:4.8.2+dfsg-11"
+    },
+    {
+        "name": "bitory_software511",
+        "value": "libqt4-svg:amd64;4:4.8.2+dfsg-11"
+    },
+    {
+        "name": "bitory_software512",
+        "value": "libqt4-xml:amd64;4:4.8.2+dfsg-11"
+    },
+    {
+        "name": "bitory_software513",
+        "value": "libqtcore4:amd64;4:4.8.2+dfsg-11"
+    },
+    {
+        "name": "bitory_software514",
+        "value": "libqtdbus4:amd64;4:4.8.2+dfsg-11"
+    },
+    {
+        "name": "bitory_software515",
+        "value": "libqtgui4:amd64;4:4.8.2+dfsg-11"
+    },
+    {
+        "name": "bitory_software516",
+        "value": "libquadmath0:amd64;4.7.2-5"
+    },
+    {
+        "name": "bitory_software517",
+        "value": "libquorum4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software518",
+        "value": "libradiusclient-ng2;0.5.6-1.1"
+    },
+    {
+        "name": "bitory_software519",
+        "value": "libreadline5:amd64;5.2+dfsg-2~deb7u1"
+    },
+    {
+        "name": "bitory_software52",
+        "value": "console-setup-linux;1.88"
+    },
+    {
+        "name": "bitory_software520",
+        "value": "libreadline6:amd64;6.2+dfsg-0.1"
+    },
+    {
+        "name": "bitory_software521",
+        "value": "libreadonly-perl;1.03-4"
+    },
+    {
+        "name": "bitory_software522",
+        "value": "libreadonly-xs-perl;1.04-2+b3"
+    },
+    {
+        "name": "bitory_software523",
+        "value": "libresample1;0.1.3-4"
+    },
+    {
+        "name": "bitory_software524",
+        "value": "librpm3;4.10.0-5+deb7u1"
+    },
+    {
+        "name": "bitory_software525",
+        "value": "librpmbuild3;4.10.0-5+deb7u1"
+    },
+    {
+        "name": "bitory_software526",
+        "value": "librpmio3;4.10.0-5+deb7u1"
+    },
+    {
+        "name": "bitory_software527",
+        "value": "librpmsign1;4.10.0-5+deb7u1"
+    },
+    {
+        "name": "bitory_software528",
+        "value": "librsvg2-2:amd64;2.36.1-2"
+    },
+    {
+        "name": "bitory_software529",
+        "value": "librsvg2-common:amd64;2.36.1-2"
+    },
+    {
+        "name": "bitory_software53",
+        "value": "coreutils;8.13-3.5"
+    },
+    {
+        "name": "bitory_software530",
+        "value": "librtmp0:amd64;2.4+20111222.git4e06e21-1"
+    },
+    {
+        "name": "bitory_software531",
+        "value": "libruby;1:1.9.3"
+    },
+    {
+        "name": "bitory_software532",
+        "value": "libruby1.8;1.8.7.358-7.1+deb7u1"
+    },
+    {
+        "name": "bitory_software533",
+        "value": "libruby1.9.1;1.9.3.194-8.1+deb7u2"
+    },
+    {
+        "name": "bitory_software534",
+        "value": "libruli4;0.33-1.1"
+    },
+    {
+        "name": "bitory_software535",
+        "value": "libsaclm3;1.1.4-4.1"
+    },
+    {
+        "name": "bitory_software536",
+        "value": "libsaevt3;1.1.4-4.1"
+    },
+    {
+        "name": "bitory_software537",
+        "value": "libsam4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software538",
+        "value": "libsamplerate0:amd64;0.1.8-5"
+    },
+    {
+        "name": "bitory_software539",
+        "value": "libsasl2-2:amd64;2.1.25.dfsg1-6+deb7u1"
+    },
+    {
+        "name": "bitory_software54",
+        "value": "cpio;2.11+dfsg-0.1"
+    },
+    {
+        "name": "bitory_software540",
+        "value": "libsasl2-modules:amd64;2.1.25.dfsg1-6+deb7u1"
+    },
+    {
+        "name": "bitory_software541",
+        "value": "libselinux1:amd64;2.1.9-5"
+    },
+    {
+        "name": "bitory_software542",
+        "value": "libsemanage-common;2.1.6-6"
+    },
+    {
+        "name": "bitory_software543",
+        "value": "libsemanage1:amd64;2.1.6-6"
+    },
+    {
+        "name": "bitory_software544",
+        "value": "libsensors4:amd64;1:3.3.2-2+deb7u1"
+    },
+    {
+        "name": "bitory_software545",
+        "value": "libsepol1:amd64;2.1.4-3"
+    },
+    {
+        "name": "bitory_software546",
+        "value": "libshadow-ruby1.8;2.1.4-2"
+    },
+    {
+        "name": "bitory_software547",
+        "value": "libsigc++-2.0-0c2a:amd64;2.2.10-0.2"
+    },
+    {
+        "name": "bitory_software548",
+        "value": "libsigsegv2;2.9-4"
+    },
+    {
+        "name": "bitory_software549",
+        "value": "libslang2:amd64;2.2.4-15"
+    },
+    {
+        "name": "bitory_software55",
+        "value": "cpp;4:4.7.2-1"
+    },
+    {
+        "name": "bitory_software550",
+        "value": "libslp1;1.2.1-9"
+    },
+    {
+        "name": "bitory_software551",
+        "value": "libsm6:amd64;2:1.2.1-2"
+    },
+    {
+        "name": "bitory_software552",
+        "value": "libsndfile1:amd64;1.0.25-5"
+    },
+    {
+        "name": "bitory_software553",
+        "value": "libsnmp-base;5.4.3~dfsg-2.8"
+    },
+    {
+        "name": "bitory_software554",
+        "value": "libsnmp15;5.4.3~dfsg-2.8"
+    },
+    {
+        "name": "bitory_software555",
+        "value": "libsoap-lite-perl;0.714-1"
+    },
+    {
+        "name": "bitory_software556",
+        "value": "libsocket-perl;2.002-1"
+    },
+    {
+        "name": "bitory_software557",
+        "value": "libsox-fmt-alsa;14.4.0-3"
+    },
+    {
+        "name": "bitory_software558",
+        "value": "libsox-fmt-base;14.4.0-3"
+    },
+    {
+        "name": "bitory_software559",
+        "value": "libsox2;14.4.0-3"
+    },
+    {
+        "name": "bitory_software56",
+        "value": "cpp-4.7;4.7.2-5"
+    },
+    {
+        "name": "bitory_software560",
+        "value": "libspandsp2;0.0.6~pre20-3.1"
+    },
+    {
+        "name": "bitory_software561",
+        "value": "libspeex1:amd64;1.2~rc1-7"
+    },
+    {
+        "name": "bitory_software562",
+        "value": "libspeexdsp1:amd64;1.2~rc1-7"
+    },
+    {
+        "name": "bitory_software563",
+        "value": "libsqlite0;2.8.17-7"
+    },
+    {
+        "name": "bitory_software564",
+        "value": "libsqlite3-0:amd64;3.7.13-1+deb7u1"
+    },
+    {
+        "name": "bitory_software565",
+        "value": "libsrtp0;1.4.4+20100615~dfsg-2+deb7u1"
+    },
+    {
+        "name": "bitory_software566",
+        "value": "libss2:amd64;1.42.5-1.1"
+    },
+    {
+        "name": "bitory_software567",
+        "value": "libss7-1;1.0.2-3"
+    },
+    {
+        "name": "bitory_software568",
+        "value": "libssh2-1:amd64;1.4.2-1.1"
+    },
+    {
+        "name": "bitory_software569",
+        "value": "libssl-dev;1.0.1e-2+deb7u12"
+    },
+    {
+        "name": "bitory_software57",
+        "value": "cpqacuxe;9.40.2-2."
+    },
+    {
+        "name": "bitory_software570",
+        "value": "libssl-doc;1.0.1e-2+deb7u12"
+    },
+    {
+        "name": "bitory_software571",
+        "value": "libssl1.0.0:amd64;1.0.1e-2+deb7u12"
+    },
+    {
+        "name": "bitory_software572",
+        "value": "libsslcommon2:amd64;0.16-6+deb7u1"
+    },
+    {
+        "name": "bitory_software573",
+        "value": "libsslcommon2-dev:amd64;0.16-6+deb7u1"
+    },
+    {
+        "name": "bitory_software574",
+        "value": "libstdc++5:amd64;1:3.3.6-25"
+    },
+    {
+        "name": "bitory_software575",
+        "value": "libstdc++6:amd64;4.7.2-5"
+    },
+    {
+        "name": "bitory_software576",
+        "value": "libstdc++6-4.7-dev;4.7.2-5"
+    },
+    {
+        "name": "bitory_software577",
+        "value": "libstonith1;1.0.9+hg2665-1"
+    },
+    {
+        "name": "bitory_software578",
+        "value": "libstonithd1;1.1.7-1"
+    },
+    {
+        "name": "bitory_software579",
+        "value": "libsub-name-perl;0.05-1+b2"
+    },
+    {
+        "name": "bitory_software58",
+        "value": "cracklib-runtime;2.8.19-3"
+    },
+    {
+        "name": "bitory_software580",
+        "value": "libsvm-tools;3.12-1"
+    },
+    {
+        "name": "bitory_software581",
+        "value": "libswitch-perl;2.16-2"
+    },
+    {
+        "name": "bitory_software582",
+        "value": "libsybdb5:amd64;0.91-2+deb7u1"
+    },
+    {
+        "name": "bitory_software583",
+        "value": "libsys-hostname-long-perl;1.4-2"
+    },
+    {
+        "name": "bitory_software584",
+        "value": "libsystemd-login0:amd64;44-11+deb7u4"
+    },
+    {
+        "name": "bitory_software585",
+        "value": "libtalloc2:amd64;2.0.7+git20120207-1"
+    },
+    {
+        "name": "bitory_software586",
+        "value": "libtask-weaken-perl;1.03-1"
+    },
+    {
+        "name": "bitory_software587",
+        "value": "libtasn1-3:amd64;2.13-2"
+    },
+    {
+        "name": "bitory_software588",
+        "value": "libtdb1:amd64;1.2.10-2"
+    },
+    {
+        "name": "bitory_software589",
+        "value": "libtext-charwidth-perl;0.04-7+b1"
+    },
+    {
+        "name": "bitory_software59",
+        "value": "cron;3.0pl1-124"
+    },
+    {
+        "name": "bitory_software590",
+        "value": "libtext-iconv-perl;1.7-5"
+    },
+    {
+        "name": "bitory_software591",
+        "value": "libtext-wrapi18n-perl;0.06-7"
+    },
+    {
+        "name": "bitory_software592",
+        "value": "libthai-data;0.1.18-2"
+    },
+    {
+        "name": "bitory_software593",
+        "value": "libthai0:amd64;0.1.18-2"
+    },
+    {
+        "name": "bitory_software594",
+        "value": "libtie-ixhash-perl;1.21-2"
+    },
+    {
+        "name": "bitory_software595",
+        "value": "libtiff4:amd64;3.9.6-11"
+    },
+    {
+        "name": "bitory_software596",
+        "value": "libtimedate-perl;1.2000-1"
+    },
+    {
+        "name": "bitory_software597",
+        "value": "libtinfo5:amd64;5.9-10"
+    },
+    {
+        "name": "bitory_software598",
+        "value": "libtirpc1:amd64;0.2.2-5"
+    },
+    {
+        "name": "bitory_software599",
+        "value": "libtokyocabinet9:amd64;1.4.47-2"
+    },
+    {
+        "name": "bitory_software6",
+        "value": "apache2;2.2.22-13+deb7u3"
+    },
+    {
+        "name": "bitory_software60",
+        "value": "curl;7.26.0-1+wheezy10"
+    },
+    {
+        "name": "bitory_software600",
+        "value": "libtonezone2.0;1:2.5.0.1-2"
+    },
+    {
+        "name": "bitory_software601",
+        "value": "libtotem-pg4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software602",
+        "value": "libtransitioner1;1.1.7-1"
+    },
+    {
+        "name": "bitory_software603",
+        "value": "libtry-tiny-perl;0.11-1"
+    },
+    {
+        "name": "bitory_software604",
+        "value": "libudev0:amd64;175-7.2"
+    },
+    {
+        "name": "bitory_software605",
+        "value": "libunistring0:amd64;0.9.3-5"
+    },
+    {
+        "name": "bitory_software606",
+        "value": "liburi-perl;1.60-1"
+    },
+    {
+        "name": "bitory_software607",
+        "value": "libusb-0.1-4:amd64;2:0.1.12-20+nmu1"
+    },
+    {
+        "name": "bitory_software608",
+        "value": "libusb-1.0-0:amd64;2:1.0.11-1"
+    },
+    {
+        "name": "bitory_software609",
+        "value": "libustr-1.0-1:amd64;1.0.4-3"
+    },
+    {
+        "name": "bitory_software61",
+        "value": "dahdi;1:2.5.0.1-2"
+    },
+    {
+        "name": "bitory_software610",
+        "value": "libuuid-perl;0.02-5"
+    },
+    {
+        "name": "bitory_software611",
+        "value": "libuuid1:amd64;2.20.1-5.3"
+    },
+    {
+        "name": "bitory_software612",
+        "value": "libvorbis0a:amd64;1.3.2-1.3"
+    },
+    {
+        "name": "bitory_software613",
+        "value": "libvorbisenc2:amd64;1.3.2-1.3"
+    },
+    {
+        "name": "bitory_software614",
+        "value": "libvorbisfile3:amd64;1.3.2-1.3"
+    },
+    {
+        "name": "bitory_software615",
+        "value": "libvotequorum4;1.4.2-3"
+    },
+    {
+        "name": "bitory_software616",
+        "value": "libvpb0;4.2.55-1"
+    },
+    {
+        "name": "bitory_software617",
+        "value": "libwavpack1:amd64;4.60.1-3"
+    },
+    {
+        "name": "bitory_software618",
+        "value": "libwbclient0:amd64;2:3.6.6-6+deb7u4"
+    },
+    {
+        "name": "bitory_software619",
+        "value": "libwmf0.2-7:amd64;0.2.8.4-10.3"
+    },
+    {
+        "name": "bitory_software62",
+        "value": "dahdi-linux;1:2.6.1+dfsg2-1"
+    },
+    {
+        "name": "bitory_software620",
+        "value": "libwrap0:amd64;7.6.q-24"
+    },
+    {
+        "name": "bitory_software621",
+        "value": "libwww-perl;6.04-1"
+    },
+    {
+        "name": "bitory_software622",
+        "value": "libwww-robotrules-perl;6.01-1"
+    },
+    {
+        "name": "bitory_software623",
+        "value": "libx11-6:amd64;2:1.5.0-1+deb7u1"
+    },
+    {
+        "name": "bitory_software624",
+        "value": "libx11-data;2:1.5.0-1+deb7u1"
+    },
+    {
+        "name": "bitory_software625",
+        "value": "libx11-dev:amd64;2:1.5.0-1+deb7u1"
+    },
+    {
+        "name": "bitory_software626",
+        "value": "libx11-doc;2:1.5.0-1+deb7u1"
+    },
+    {
+        "name": "bitory_software627",
+        "value": "libx11-protocol-perl;0.56-4"
+    },
+    {
+        "name": "bitory_software628",
+        "value": "libx11-xcb1:amd64;2:1.5.0-1+deb7u1"
+    },
+    {
+        "name": "bitory_software629",
+        "value": "libxapian22;1.2.12-2"
+    },
+    {
+        "name": "bitory_software63",
+        "value": "dash;0.5.7-3"
+    },
+    {
+        "name": "bitory_software630",
+        "value": "libxau-dev:amd64;1:1.0.7-1"
+    },
+    {
+        "name": "bitory_software631",
+        "value": "libxau6:amd64;1:1.0.7-1"
+    },
+    {
+        "name": "bitory_software632",
+        "value": "libxaw7:amd64;2:1.0.10-2"
+    },
+    {
+        "name": "bitory_software633",
+        "value": "libxcb-glx0:amd64;1.8.1-2+deb7u1"
+    },
+    {
+        "name": "bitory_software634",
+        "value": "libxcb-render0:amd64;1.8.1-2+deb7u1"
+    },
+    {
+        "name": "bitory_software635",
+        "value": "libxcb-shape0:amd64;1.8.1-2+deb7u1"
+    },
+    {
+        "name": "bitory_software636",
+        "value": "libxcb-shm0:amd64;1.8.1-2+deb7u1"
+    },
+    {
+        "name": "bitory_software637",
+        "value": "libxcb1:amd64;1.8.1-2+deb7u1"
+    },
+    {
+        "name": "bitory_software638",
+        "value": "libxcb1-dev:amd64;1.8.1-2+deb7u1"
+    },
+    {
+        "name": "bitory_software639",
+        "value": "libxcomposite1:amd64;1:0.4.3-2"
+    },
+    {
+        "name": "bitory_software64",
+        "value": "db5.1-util;5.1.29-5"
+    },
+    {
+        "name": "bitory_software640",
+        "value": "libxcursor1:amd64;1:1.1.13-1+deb7u1"
+    },
+    {
+        "name": "bitory_software641",
+        "value": "libxdamage1:amd64;1:1.1.3-2"
+    },
+    {
+        "name": "bitory_software642",
+        "value": "libxdmcp-dev:amd64;1:1.1.1-1"
+    },
+    {
+        "name": "bitory_software643",
+        "value": "libxdmcp6:amd64;1:1.1.1-1"
+    },
+    {
+        "name": "bitory_software644",
+        "value": "libxext6:amd64;2:1.3.1-2+deb7u1"
+    },
+    {
+        "name": "bitory_software645",
+        "value": "libxfixes3:amd64;1:5.0-4+deb7u1"
+    },
+    {
+        "name": "bitory_software646",
+        "value": "libxft2:amd64;2.3.1-1"
+    },
+    {
+        "name": "bitory_software647",
+        "value": "libxi6:amd64;2:1.6.1-1+deb7u1"
+    },
+    {
+        "name": "bitory_software648",
+        "value": "libxinerama1:amd64;2:1.1.2-1+deb7u1"
+    },
+    {
+        "name": "bitory_software649",
+        "value": "libxml-parser-perl;2.41-1+b1"
+    },
+    {
+        "name": "bitory_software65",
+        "value": "dbconfig-common;1.8.47+nmu1"
+    },
+    {
+        "name": "bitory_software650",
+        "value": "libxml-twig-perl;1:3.39-1"
+    },
+    {
+        "name": "bitory_software651",
+        "value": "libxml-xpathengine-perl;0.13-1"
+    },
+    {
+        "name": "bitory_software652",
+        "value": "libxml2:amd64;2.8.0+dfsg1-7+wheezy1"
+    },
+    {
+        "name": "bitory_software653",
+        "value": "libxml2-utils;2.8.0+dfsg1-7+wheezy1"
+    },
+    {
+        "name": "bitory_software654",
+        "value": "libxmu6:amd64;2:1.1.1-1"
+    },
+    {
+        "name": "bitory_software655",
+        "value": "libxmuu1:amd64;2:1.1.1-1"
+    },
+    {
+        "name": "bitory_software656",
+        "value": "libxp6:amd64;1:1.0.1-2+deb7u1"
+    },
+    {
+        "name": "bitory_software657",
+        "value": "libxpm-dev:amd64;1:3.5.10-1"
+    },
+    {
+        "name": "bitory_software658",
+        "value": "libxpm4:amd64;1:3.5.10-1"
+    },
+    {
+        "name": "bitory_software659",
+        "value": "libxrandr2:amd64;2:1.3.2-2+deb7u1"
+    },
+    {
+        "name": "bitory_software66",
+        "value": "dbus;1.6.8-1+deb7u4"
+    },
+    {
+        "name": "bitory_software660",
+        "value": "libxrender1:amd64;1:0.9.7-1+deb7u1"
+    },
+    {
+        "name": "bitory_software661",
+        "value": "libxslt1.1:amd64;1.1.26-14.1"
+    },
+    {
+        "name": "bitory_software662",
+        "value": "libxt6:amd64;1:1.1.3-1+deb7u1"
+    },
+    {
+        "name": "bitory_software663",
+        "value": "libxtst6:amd64;2:1.2.1-1+deb7u1"
+    },
+    {
+        "name": "bitory_software664",
+        "value": "libxv1:amd64;2:1.0.7-1+deb7u1"
+    },
+    {
+        "name": "bitory_software665",
+        "value": "libxxf86dga1:amd64;2:1.1.3-2+deb7u1"
+    },
+    {
+        "name": "bitory_software666",
+        "value": "libxxf86vm1:amd64;1:1.1.2-1+deb7u1"
+    },
+    {
+        "name": "bitory_software667",
+        "value": "libyajl2;2.0.4-2"
+    },
+    {
+        "name": "bitory_software668",
+        "value": "libyaml-0-2:amd64;0.1.4-2+deb7u4"
+    },
+    {
+        "name": "bitory_software669",
+        "value": "libyaml-syck-perl;1.20-1"
+    },
+    {
+        "name": "bitory_software67",
+        "value": "dc;1.06.95-2+b1"
+    },
+    {
+        "name": "bitory_software670",
+        "value": "linux-base;3.5"
+    },
+    {
+        "name": "bitory_software671",
+        "value": "linux-image-3.2.0-4-amd64;3.2.60-1+deb7u3"
+    },
+    {
+        "name": "bitory_software672",
+        "value": "linux-image-amd64;3.2+46"
+    },
+    {
+        "name": "bitory_software673",
+        "value": "linux-libc-dev:amd64;3.2.60-1+deb7u3"
+    },
+    {
+        "name": "bitory_software674",
+        "value": "locales;2.13-38+deb7u4"
+    },
+    {
+        "name": "bitory_software675",
+        "value": "lockfile-progs;0.1.17"
+    },
+    {
+        "name": "bitory_software676",
+        "value": "login;1:4.1.5.1-1"
+    },
+    {
+        "name": "bitory_software677",
+        "value": "logrotate;3.8.1-4"
+    },
+    {
+        "name": "bitory_software678",
+        "value": "lprng;3.8.B-2"
+    },
+    {
+        "name": "bitory_software679",
+        "value": "lsb;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software68",
+        "value": "debconf;1.5.49"
+    },
+    {
+        "name": "bitory_software680",
+        "value": "lsb-base;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software681",
+        "value": "lsb-core;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software682",
+        "value": "lsb-cxx;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software683",
+        "value": "lsb-desktop;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software684",
+        "value": "lsb-graphics;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software685",
+        "value": "lsb-languages;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software686",
+        "value": "lsb-multimedia;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software687",
+        "value": "lsb-printing;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software688",
+        "value": "lsb-release;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software689",
+        "value": "lsb-security;4.1+Debian8+deb7u1"
+    },
+    {
+        "name": "bitory_software69",
+        "value": "debconf-i18n;1.5.49"
+    },
+    {
+        "name": "bitory_software690",
+        "value": "lsof;4.86+dfsg-1"
+    },
+    {
+        "name": "bitory_software691",
+        "value": "lynx;2.8.8dev.12-2"
+    },
+    {
+        "name": "bitory_software692",
+        "value": "lynx-cur;2.8.8dev.12-2"
+    },
+    {
+        "name": "bitory_software693",
+        "value": "m4;1.4.16-3"
+    },
+    {
+        "name": "bitory_software694",
+        "value": "make;3.81-8.2"
+    },
+    {
+        "name": "bitory_software695",
+        "value": "makedev;2.3.1-92"
+    },
+    {
+        "name": "bitory_software696",
+        "value": "man-db;2.6.2-1"
+    },
+    {
+        "name": "bitory_software697",
+        "value": "manpages;3.44-1"
+    },
+    {
+        "name": "bitory_software698",
+        "value": "manpages-de;1.2-1"
+    },
+    {
+        "name": "bitory_software699",
+        "value": "manpages-dev;3.44-1"
+    },
+    {
+        "name": "bitory_software7",
+        "value": "apache2-mpm-prefork;2.2.22-13+deb7u3"
+    },
+    {
+        "name": "bitory_software70",
+        "value": "debconf-utils;1.5.49"
+    },
+    {
+        "name": "bitory_software700",
+        "value": "mawk;1.3.3-17"
+    },
+    {
+        "name": "bitory_software701",
+        "value": "mime-support;3.52-1"
+    },
+    {
+        "name": "bitory_software702",
+        "value": "mlocate;0.23.1-1"
+    },
+    {
+        "name": "bitory_software703",
+        "value": "module-assistant;0.11.4"
+    },
+    {
+        "name": "bitory_software704",
+        "value": "module-init-tools;9-3"
+    },
+    {
+        "name": "bitory_software705",
+        "value": "mount;2.20.1-5.3"
+    },
+    {
+        "name": "bitory_software706",
+        "value": "multiarch-support;2.13-38+deb7u4"
+    },
+    {
+        "name": "bitory_software707",
+        "value": "mutt;1.5.21-6.2+deb7u2"
+    },
+    {
+        "name": "bitory_software708",
+        "value": "mysql-client-5.5;5.5.38-0+wheezy1"
+    },
+    {
+        "name": "bitory_software709",
+        "value": "mysql-common;5.5.38-0+wheezy1"
+    },
+    {
+        "name": "bitory_software71",
+        "value": "debhelper;9.20120909"
+    },
+    {
+        "name": "bitory_software710",
+        "value": "nagios-images;0.7"
+    },
+    {
+        "name": "bitory_software711",
+        "value": "nagios-nrpe-server;2.13-3"
+    },
+    {
+        "name": "bitory_software712",
+        "value": "nagios-plugins;1.4.16-1"
+    },
+    {
+        "name": "bitory_software713",
+        "value": "nagios-plugins-basic;1.4.16-1"
+    },
+    {
+        "name": "bitory_software714",
+        "value": "nagios-plugins-common;1.4.16-1"
+    },
+    {
+        "name": "bitory_software715",
+        "value": "nagios-plugins-contrib;4.20120702"
+    },
+    {
+        "name": "bitory_software716",
+        "value": "nagios-plugins-standard;1.4.16-1"
+    },
+    {
+        "name": "bitory_software717",
+        "value": "nano;2.2.6-1+b1"
+    },
+    {
+        "name": "bitory_software718",
+        "value": "ncftp;2:3.2.5-1.1"
+    },
+    {
+        "name": "bitory_software719",
+        "value": "ncurses-base;5.9-10"
+    },
+    {
+        "name": "bitory_software72",
+        "value": "debian-archive-keyring;2012.4"
+    },
+    {
+        "name": "bitory_software720",
+        "value": "ncurses-bin;5.9-10"
+    },
+    {
+        "name": "bitory_software721",
+        "value": "ncurses-term;5.9-10"
+    },
+    {
+        "name": "bitory_software722",
+        "value": "net-tools;1.60-24.2"
+    },
+    {
+        "name": "bitory_software723",
+        "value": "netbase;5.0"
+    },
+    {
+        "name": "bitory_software724",
+        "value": "netcat-traditional;1.10-40"
+    },
+    {
+        "name": "bitory_software725",
+        "value": "netpbm;2:10.0-15+b1"
+    },
+    {
+        "name": "bitory_software726",
+        "value": "nfs-common;1:1.2.6-4"
+    },
+    {
+        "name": "bitory_software727",
+        "value": "nfs-kernel-server;1:1.2.6-4"
+    },
+    {
+        "name": "bitory_software728",
+        "value": "nmap;6.00-0.3+deb7u1"
+    },
+    {
+        "name": "bitory_software729",
+        "value": "ntpdate;1:4.2.6.p5+dfsg-2"
+    },
+    {
+        "name": "bitory_software73",
+        "value": "debian-faq;5.0.1"
+    },
+    {
+        "name": "bitory_software730",
+        "value": "ocfs2-tools;1.6.4-1+deb7u1"
+    },
+    {
+        "name": "bitory_software731",
+        "value": "openhpid;2.14.1-1.2"
+    },
+    {
+        "name": "bitory_software732",
+        "value": "openssh-blacklist;0.4.1+nmu1"
+    },
+    {
+        "name": "bitory_software733",
+        "value": "openssh-blacklist-extra;0.4.1+nmu1"
+    },
+    {
+        "name": "bitory_software734",
+        "value": "openssh-client;1:6.0p1-4+deb7u2"
+    },
+    {
+        "name": "bitory_software735",
+        "value": "openssh-server;1:6.0p1-4+deb7u2"
+    },
+    {
+        "name": "bitory_software736",
+        "value": "openssl;1.0.1e-2+deb7u12"
+    },
+    {
+        "name": "bitory_software737",
+        "value": "os-prober;1.58"
+    },
+    {
+        "name": "bitory_software738",
+        "value": "ossec-hids-agent;2.7.1-1"
+    },
+    {
+        "name": "bitory_software739",
+        "value": "pacemaker;1.1.7-1"
+    },
+    {
+        "name": "bitory_software74",
+        "value": "debianutils;4.3.2"
+    },
+    {
+        "name": "bitory_software740",
+        "value": "passwd;1:4.1.5.1-1"
+    },
+    {
+        "name": "bitory_software741",
+        "value": "patch;2.6.1-3"
+    },
+    {
+        "name": "bitory_software742",
+        "value": "pax;1:20120606-2"
+    },
+    {
+        "name": "bitory_software743",
+        "value": "pciutils;1:3.1.9-6"
+    },
+    {
+        "name": "bitory_software744",
+        "value": "perl;5.14.2-21+deb7u1"
+    },
+    {
+        "name": "bitory_software745",
+        "value": "perl-base;5.14.2-21+deb7u1"
+    },
+    {
+        "name": "bitory_software746",
+        "value": "perl-modules;5.14.2-21+deb7u1"
+    },
+    {
+        "name": "bitory_software747",
+        "value": "php5;5.4.4-14+deb7u14"
+    },
+    {
+        "name": "bitory_software748",
+        "value": "php5-cgi;5.4.4-14+deb7u14"
+    },
+    {
+        "name": "bitory_software749",
+        "value": "php5-cli;5.4.4-14+deb7u14"
+    },
+    {
+        "name": "bitory_software75",
+        "value": "dialog;1.1-20120215-2"
+    },
+    {
+        "name": "bitory_software750",
+        "value": "php5-common;5.4.4-14+deb7u14"
+    },
+    {
+        "name": "bitory_software751",
+        "value": "php5-curl;5.4.4-14+deb7u14"
+    },
+    {
+        "name": "bitory_software752",
+        "value": "php5-ldap;5.4.4-14+deb7u14"
+    },
+    {
+        "name": "bitory_software753",
+        "value": "php5-mcrypt;5.4.4-14+deb7u14"
+    },
+    {
+        "name": "bitory_software754",
+        "value": "php5-mysql;5.4.4-14+deb7u14"
+    },
+    {
+        "name": "bitory_software755",
+        "value": "pkg-config;0.26-1"
+    },
+    {
+        "name": "bitory_software756",
+        "value": "po-debconf;1.0.16+nmu2"
+    },
+    {
+        "name": "bitory_software757",
+        "value": "poppler-data;0.4.5-10"
+    },
+    {
+        "name": "bitory_software758",
+        "value": "poppler-utils;0.18.4-6"
+    },
+    {
+        "name": "bitory_software759",
+        "value": "postfix;2.9.6-2"
+    },
+    {
+        "name": "bitory_software76",
+        "value": "dictionaries-common;1.12.11"
+    },
+    {
+        "name": "bitory_software760",
+        "value": "procmail;3.22-20+deb7u1"
+    },
+    {
+        "name": "bitory_software761",
+        "value": "procps;1:3.3.3-3"
+    },
+    {
+        "name": "bitory_software762",
+        "value": "psmisc;22.19-1+deb7u1"
+    },
+    {
+        "name": "bitory_software763",
+        "value": "psutils;1.17.dfsg-1"
+    },
+    {
+        "name": "bitory_software764",
+        "value": "puppet;3.7.1-1puppetlabs1"
+    },
+    {
+        "name": "bitory_software765",
+        "value": "puppet-common;3.7.1-1puppetlabs1"
+    },
+    {
+        "name": "bitory_software766",
+        "value": "python;2.7.3-4+deb7u1"
+    },
+    {
+        "name": "bitory_software767",
+        "value": "python-apt;0.8.8.2"
+    },
+    {
+        "name": "bitory_software768",
+        "value": "python-apt-common;0.8.8.2"
+    },
+    {
+        "name": "bitory_software769",
+        "value": "python-chardet;2.0.1-2"
+    },
+    {
+        "name": "bitory_software77",
+        "value": "diffutils;1:3.2-6"
+    },
+    {
+        "name": "bitory_software770",
+        "value": "python-debian;0.1.21"
+    },
+    {
+        "name": "bitory_software771",
+        "value": "python-debianbts;1.11"
+    },
+    {
+        "name": "bitory_software772",
+        "value": "python-fpconst;0.7.2-5"
+    },
+    {
+        "name": "bitory_software773",
+        "value": "python-minimal;2.7.3-4+deb7u1"
+    },
+    {
+        "name": "bitory_software774",
+        "value": "python-reportbug;6.4.4+deb7u1"
+    },
+    {
+        "name": "bitory_software775",
+        "value": "python-soappy;0.12.0-4"
+    },
+    {
+        "name": "bitory_software776",
+        "value": "python-support;1.0.15"
+    },
+    {
+        "name": "bitory_software777",
+        "value": "python2.6;2.6.8-1.1"
+    },
+    {
+        "name": "bitory_software778",
+        "value": "python2.6-minimal;2.6.8-1.1"
+    },
+    {
+        "name": "bitory_software779",
+        "value": "python2.7;2.7.3-6+deb7u2"
+    },
+    {
+        "name": "bitory_software78",
+        "value": "discover;2.1.2-5.2"
+    },
+    {
+        "name": "bitory_software780",
+        "value": "python2.7-minimal;2.7.3-6+deb7u2"
+    },
+    {
+        "name": "bitory_software781",
+        "value": "qstat;2.11-3"
+    },
+    {
+        "name": "bitory_software782",
+        "value": "readline-common;6.2+dfsg-0.1"
+    },
+    {
+        "name": "bitory_software783",
+        "value": "reportbug;6.4.4+deb7u1"
+    },
+    {
+        "name": "bitory_software784",
+        "value": "resource-agents;1:3.9.2-5+deb7u2"
+    },
+    {
+        "name": "bitory_software785",
+        "value": "rpcbind;0.2.0-8"
+    },
+    {
+        "name": "bitory_software786",
+        "value": "rpm;4.10.0-5+deb7u1"
+    },
+    {
+        "name": "bitory_software787",
+        "value": "rpm-common;4.10.0-5+deb7u1"
+    },
+    {
+        "name": "bitory_software788",
+        "value": "rpm2cpio;4.10.0-5+deb7u1"
+    },
+    {
+        "name": "bitory_software789",
+        "value": "rsync;3.0.9-4"
+    },
+    {
+        "name": "bitory_software79",
+        "value": "discover-data;2.2010.10.18"
+    },
+    {
+        "name": "bitory_software790",
+        "value": "rsyslog;5.8.11-3"
+    },
+    {
+        "name": "bitory_software791",
+        "value": "ruby;1:1.9.3"
+    },
+    {
+        "name": "bitory_software792",
+        "value": "ruby-json;1.7.3-3"
+    },
+    {
+        "name": "bitory_software793",
+        "value": "ruby-rgen;0.6.5-1puppetlabs1"
+    },
+    {
+        "name": "bitory_software794",
+        "value": "ruby-shadow;2.1.4-2"
+    },
+    {
+        "name": "bitory_software795",
+        "value": "ruby1.8;1.8.7.358-7.1+deb7u1"
+    },
+    {
+        "name": "bitory_software796",
+        "value": "ruby1.9.1;1.9.3.194-8.1+deb7u2"
+    },
+    {
+        "name": "bitory_software797",
+        "value": "samba-common;2:3.6.6-6+deb7u4"
+    },
+    {
+        "name": "bitory_software798",
+        "value": "samba-common-bin;2:3.6.6-6+deb7u4"
+    },
+    {
+        "name": "bitory_software799",
+        "value": "sed;4.2.1-10"
+    },
+    {
+        "name": "bitory_software8",
+        "value": "apache2-utils;2.2.22-13+deb7u3"
+    },
+    {
+        "name": "bitory_software80",
+        "value": "dmidecode;2.11-9"
+    },
+    {
+        "name": "bitory_software800",
+        "value": "sensible-utils;0.0.7"
+    },
+    {
+        "name": "bitory_software801",
+        "value": "sgml-base;1.26+nmu4"
+    },
+    {
+        "name": "bitory_software802",
+        "value": "shared-mime-info;1.0-1+b1"
+    },
+    {
+        "name": "bitory_software803",
+        "value": "sipsak;0.9.6-2.1+b1"
+    },
+    {
+        "name": "bitory_software804",
+        "value": "slapd;2.4.31-1+nmu2"
+    },
+    {
+        "name": "bitory_software805",
+        "value": "smbclient;2:3.6.6-6+deb7u4"
+    },
+    {
+        "name": "bitory_software806",
+        "value": "snmp;5.4.3~dfsg-2.8"
+    },
+    {
+        "name": "bitory_software807",
+        "value": "snmpd;5.4.3~dfsg-2.8"
+    },
+    {
+        "name": "bitory_software808",
+        "value": "sox;14.4.0-3"
+    },
+    {
+        "name": "bitory_software809",
+        "value": "ssl-cert;1.0.32"
+    },
+    {
+        "name": "bitory_software81",
+        "value": "dmsetup;2:1.02.74-8"
+    },
+    {
+        "name": "bitory_software810",
+        "value": "strace;4.5.20-2.3"
+    },
+    {
+        "name": "bitory_software811",
+        "value": "sudo;1.8.5p2-1+nmu1"
+    },
+    {
+        "name": "bitory_software812",
+        "value": "sysv-rc;2.88dsf-41+deb7u1"
+    },
+    {
+        "name": "bitory_software813",
+        "value": "sysvinit;2.88dsf-41+deb7u1"
+    },
+    {
+        "name": "bitory_software814",
+        "value": "sysvinit-utils;2.88dsf-41+deb7u1"
+    },
+    {
+        "name": "bitory_software815",
+        "value": "tar;1.26+dfsg-0.1"
+    },
+    {
+        "name": "bitory_software816",
+        "value": "task-german;3.14.1"
+    },
+    {
+        "name": "bitory_software817",
+        "value": "tasksel;3.14.1"
+    },
+    {
+        "name": "bitory_software818",
+        "value": "tasksel-data;3.14.1"
+    },
+    {
+        "name": "bitory_software819",
+        "value": "tcpd;7.6.q-24"
+    },
+    {
+        "name": "bitory_software82",
+        "value": "dnsutils;1:9.8.4.dfsg.P1-6+nmu2+deb7u2"
+    },
+    {
+        "name": "bitory_software820",
+        "value": "tcpdump;4.3.0-1"
+    },
+    {
+        "name": "bitory_software821",
+        "value": "telnet;0.17-36"
+    },
+    {
+        "name": "bitory_software822",
+        "value": "texinfo;4.13a.dfsg.1-10"
+    },
+    {
+        "name": "bitory_software823",
+        "value": "time;1.7-24"
+    },
+    {
+        "name": "bitory_software824",
+        "value": "traceroute;1:2.0.18-3"
+    },
+    {
+        "name": "bitory_software825",
+        "value": "ttf-dejavu-core;2.33-3"
+    },
+    {
+        "name": "bitory_software826",
+        "value": "ttf-freefont;20120503-1"
+    },
+    {
+        "name": "bitory_software827",
+        "value": "tzdata;2014e-0wheezy1"
+    },
+    {
+        "name": "bitory_software828",
+        "value": "ucf;3.0025+nmu3"
+    },
+    {
+        "name": "bitory_software829",
+        "value": "udev;175-7.2"
+    },
+    {
+        "name": "bitory_software83",
+        "value": "doc-debian;6.1"
+    },
+    {
+        "name": "bitory_software830",
+        "value": "ufraw-batch;0.18-2"
+    },
+    {
+        "name": "bitory_software831",
+        "value": "unzip;6.0-8"
+    },
+    {
+        "name": "bitory_software832",
+        "value": "usbutils;1:005-3"
+    },
+    {
+        "name": "bitory_software833",
+        "value": "util-linux;2.20.1-5.3"
+    },
+    {
+        "name": "bitory_software834",
+        "value": "uuid-dev;2.20.1-5.3"
+    },
+    {
+        "name": "bitory_software835",
+        "value": "vim;2:7.3.547-7"
+    },
+    {
+        "name": "bitory_software836",
+        "value": "vim-common;2:7.3.547-7"
+    },
+    {
+        "name": "bitory_software837",
+        "value": "vim-runtime;2:7.3.547-7"
+    },
+    {
+        "name": "bitory_software838",
+        "value": "vim-tiny;2:7.3.547-7"
+    },
+    {
+        "name": "bitory_software839",
+        "value": "virt-what;1.12-1"
+    },
+    {
+        "name": "bitory_software84",
+        "value": "dpkg;1.16.15"
+    },
+    {
+        "name": "bitory_software840",
+        "value": "vpb-driver-source;4.2.55-1"
+    },
+    {
+        "name": "bitory_software841",
+        "value": "w3m;0.5.3-8"
+    },
+    {
+        "name": "bitory_software842",
+        "value": "wamerican;7.1-1"
+    },
+    {
+        "name": "bitory_software843",
+        "value": "wget;1.13.4-3+deb7u1"
+    },
+    {
+        "name": "bitory_software844",
+        "value": "whiptail;0.52.14-11.1"
+    },
+    {
+        "name": "bitory_software845",
+        "value": "whois;5.1.1~deb7u1"
+    },
+    {
+        "name": "bitory_software846",
+        "value": "wngerman;20120607-1"
+    },
+    {
+        "name": "bitory_software847",
+        "value": "wwwconfig-common;0.2.2"
+    },
+    {
+        "name": "bitory_software848",
+        "value": "x11-common;1:7.7+3~deb7u1"
+    },
+    {
+        "name": "bitory_software849",
+        "value": "x11-utils;7.7~1"
+    },
+    {
+        "name": "bitory_software85",
+        "value": "dpkg-dev;1.16.15"
+    },
+    {
+        "name": "bitory_software850",
+        "value": "x11proto-core-dev;7.0.23-1"
+    },
+    {
+        "name": "bitory_software851",
+        "value": "x11proto-input-dev;2.2-1"
+    },
+    {
+        "name": "bitory_software852",
+        "value": "x11proto-kb-dev;1.0.6-2"
+    },
+    {
+        "name": "bitory_software853",
+        "value": "xauth;1:1.0.7-1"
+    },
+    {
+        "name": "bitory_software854",
+        "value": "xdg-utils;1.1.0~rc1+git20111210-6"
+    },
+    {
+        "name": "bitory_software855",
+        "value": "xkb-data;2.5.1-3"
+    },
+    {
+        "name": "bitory_software856",
+        "value": "xml-core;0.13+nmu2"
+    },
+    {
+        "name": "bitory_software857",
+        "value": "xorg-sgml-doctools;1:1.10-1"
+    },
+    {
+        "name": "bitory_software858",
+        "value": "xtrans-dev;1.2.7-1"
+    },
+    {
+        "name": "bitory_software859",
+        "value": "xz-utils;5.1.1alpha+20120614-2"
+    },
+    {
+        "name": "bitory_software86",
+        "value": "drbd8-utils;2:8.3.13-2"
+    },
+    {
+        "name": "bitory_software860",
+        "value": "zlib1g:amd64;1:1.2.7.dfsg-13"
+    },
+    {
+        "name": "bitory_software861",
+        "value": "zlib1g-dev:amd64;1:1.2.7.dfsg-13"
+    },
+    {
+        "name": "bitory_software87",
+        "value": "e2fslibs:amd64;1.42.5-1.1"
+    },
+    {
+        "name": "bitory_software88",
+        "value": "e2fsprogs;1.42.5-1.1"
+    },
+    {
+        "name": "bitory_software89",
+        "value": "ed;1.6-2"
+    },
+    {
+        "name": "bitory_software9",
+        "value": "apache2.2-bin;2.2.22-13+deb7u3"
+    },
+    {
+        "name": "bitory_software90",
+        "value": "ethtool;1:3.4.2-1"
+    },
+    {
+        "name": "bitory_software91",
+        "value": "facter;2.2.0-1puppetlabs1"
+    },
+    {
+        "name": "bitory_software92",
+        "value": "fakeroot;1.18.4-2"
+    },
+    {
+        "name": "bitory_software93",
+        "value": "fetchmail;6.3.21-4"
+    },
+    {
+        "name": "bitory_software94",
+        "value": "file;5.11-2+deb7u5"
+    },
+    {
+        "name": "bitory_software95",
+        "value": "findutils;4.4.2-4"
+    },
+    {
+        "name": "bitory_software96",
+        "value": "fontconfig;2.9.0-7.1"
+    },
+    {
+        "name": "bitory_software97",
+        "value": "fontconfig-config;2.9.0-7.1"
+    },
+    {
+        "name": "bitory_software98",
+        "value": "fonts-droid;20111207+git-1"
+    },
+    {
+        "name": "bitory_software99",
+        "value": "fonts-freefont-ttf;20120503-1"
+    },
+    {
+        "name": "bitory_software_count",
+        "value": "861"
+    },
+    {
+        "name": "bitory_team",
+        "value": "iss1"
+    },
+    {
+        "name": "blockdevices",
+        "value": "sda"
+    },
+    {
+        "name": "blockdevice_sda_model",
+        "value": "LOGICAL VOLUME"
+    },
+    {
+        "name": "blockdevice_sda_size",
+        "value": "146778685440"
+    },
+    {
+        "name": "blockdevice_sda_vendor",
+        "value": "HP"
+    },
+    {
+        "name": "clientcert",
+        "value": "servername.domain.dir"
+    },
+    {
+        "name": "clientnoop",
+        "value": "false"
+    },
+    {
+        "name": "clientversion",
+        "value": "3.7.1"
+    },
+    {
+        "name": "domain",
+        "value": "bit"
+    },
+    {
+        "name": "facterversion",
+        "value": "2.2.0"
+    },
+    {
+        "name": "filesystems",
+        "value": "ext4,ocfs2"
+    },
+    {
+        "name": "fqdn",
+        "value": " servername.domain.dir"
+    },
+    {
+        "name": "gid",
+        "value": "root"
+    },
+    {
+        "name": "hardwareisa",
+        "value": "unknown"
+    },
+    {
+        "name": "hardwaremodel",
+        "value": "x86_64"
+    },
+    {
+        "name": "hostname",
+        "value": "servername"
+    },
+    {
+        "name": "id",
+        "value": "root"
+    },
+    {
+        "name": "interfaces",
+        "value": "eth2,eth2_0,eth2_1,eth3,eth4,eth5,eth6,eth7,lo"
+    },
+    {
+        "name": "ipaddress",
+        "value": "1.1.1.1"
+    },
+    {
+        "name": "ipaddress_eth2",
+        "value": "1.1.1.1"
+    },
+    {
+        "name": "ipaddress_eth2_0",
+        "value": "1.1.1.2"
+    },
+    {
+        "name": "ipaddress_eth2_1",
+        "value": "1.1.1.3"
+    },
+    {
+        "name": "ipaddress_eth4",
+        "value": "3.3.3.3"
+    },
+    {
+        "name": "ipaddress_lo",
+        "value": "127.0.0.1"
+    },
+    {
+        "name": "is_pe",
+        "value": "false"
+    },
+    {
+        "name": "is_virtual",
+        "value": "false"
+    },
+    {
+        "name": "kernel",
+        "value": "Linux"
+    },
+    {
+        "name": "kernelmajversion",
+        "value": "3.2"
+    },
+    {
+        "name": "kernelrelease",
+        "value": "3.2.0-4-amd64"
+    },
+    {
+        "name": "kernelversion",
+        "value": "3.2.0"
+    },
+    {
+        "name": "lsbdistcodename",
+        "value": "wheezy"
+    },
+    {
+        "name": "lsbdistdescription",
+        "value": "Debian GNU\/Linux 7.6 (wheezy)"
+    },
+    {
+        "name": "lsbdistid",
+        "value": "Debian"
+    },
+    {
+        "name": "lsbdistrelease",
+        "value": "7.6"
+    },
+    {
+        "name": "lsbmajdistrelease",
+        "value": "7"
+    },
+    {
+        "name": "lsbminordistrelease",
+        "value": "6"
+    },
+    {
+        "name": "lsbrelease",
+        "value": "core-2.0-amd64:core-2.0-noarch:core-3.0-amd64:core-3.0-noarch:core-3.1-amd64:core-3.1-noarch:core-3.2-amd64:core-3.2-noarch:core-4.0-amd64:core-4.0-noarch:core-4.1-amd64:core-4.1-noarch:cxx-3.0-amd64:cxx-3.0-noarch:cxx-3.1-amd64:cxx-3.1-noarch:cxx-3.2-amd64:cxx-3.2-noarch:cxx-4.0-amd64:cxx-4.0-noarch:cxx-4.1-amd64:cxx-4.1-noarch:desktop-3.1-amd64:desktop-3.1-noarch:desktop-3.2-amd64:desktop-3.2-noarch:desktop-4.0-amd64:desktop-4.0-noarch:desktop-4.1-amd64:desktop-4.1-noarch:graphics-2.0-amd64:graphics-2.0-noarch:graphics-3.0-amd64:graphics-3.0-noarch:graphics-3.1-amd64:graphics-3.1-noarch:graphics-3.2-amd64:graphics-3.2-noarch:graphics-4.0-amd64:graphics-4.0-noarch:graphics-4.1-amd64:graphics-4.1-noarch:languages-3.2-amd64:languages-3.2-noarch:languages-4.0-amd64:languages-4.0-noarch:languages-4.1-amd64:languages-4.1-noarch:multimedia-3.2-amd64:multimedia-3.2-noarch:multimedia-4.0-amd64:multimedia-4.0-noarch:multimedia-4.1-amd64:multimedia-4.1-noarch:printing-3.2-amd64:printing-3.2-noarch:printing-4.0-amd64:printing-4.0-noarch:printing-4.1-amd64:printing-4.1-noarch:qt4-3.1-amd64:qt4-3.1-noarch:security-4.0-amd64:security-4.0-noarch:security-4.1-amd64:security-4.1-noarch"
+    },
+    {
+        "name": "macaddress",
+        "value": "1c:c1:de:05:f8:e0"
+    },
+    {
+        "name": "macaddress_eth2",
+        "value": "1c:c1:de:05:f8:e0"
+    },
+    {
+        "name": "macaddress_eth2_0",
+        "value": "1c:c1:de:05:f8:e0"
+    },
+    {
+        "name": "macaddress_eth2_1",
+        "value": "1c:c1:de:05:f8:e0"
+    },
+    {
+        "name": "macaddress_eth3",
+        "value": "1c:c1:de:05:f8:e4"
+    },
+    {
+        "name": "macaddress_eth4",
+        "value": "d4:85:64:4f:9b:2e"
+    },
+    {
+        "name": "macaddress_eth5",
+        "value": "d4:85:64:4f:9b:2f"
+    },
+    {
+        "name": "macaddress_eth6",
+        "value": "d4:85:64:4f:9b:2d"
+    },
+    {
+        "name": "macaddress_eth7",
+        "value": "d4:85:64:4f:9b:2c"
+    },
+    {
+        "name": "manufacturer",
+        "value": "HP"
+    },
+    {
+        "name": "memoryfree",
+        "value": "20.33 GB"
+    },
+    {
+        "name": "memoryfree_mb",
+        "value": "20818.46"
+    },
+    {
+        "name": "memorysize",
+        "value": "21.61 GB"
+    },
+    {
+        "name": "memorysize_mb",
+        "value": "22133.02"
+    },
+    {
+        "name": "mtu_eth2",
+        "value": "1500"
+    },
+    {
+        "name": "mtu_eth2_0",
+        "value": "1500"
+    },
+    {
+        "name": "mtu_eth2_1",
+        "value": "1500"
+    },
+    {
+        "name": "mtu_eth3",
+        "value": "1500"
+    },
+    {
+        "name": "mtu_eth4",
+        "value": "1500"
+    },
+    {
+        "name": "mtu_eth5",
+        "value": "1500"
+    },
+    {
+        "name": "mtu_eth6",
+        "value": "1500"
+    },
+    {
+        "name": "mtu_eth7",
+        "value": "1500"
+    },
+    {
+        "name": "mtu_lo",
+        "value": "16436"
+    },
+    {
+        "name": "netmask",
+        "value": "255.255.254.0"
+    },
+    {
+        "name": "netmask_eth2",
+        "value": "255.255.254.0"
+    },
+    {
+        "name": "netmask_eth2_0",
+        "value": "255.255.254.0"
+    },
+    {
+        "name": "netmask_eth2_1",
+        "value": "255.255.254.0"
+    },
+    {
+        "name": "netmask_eth4",
+        "value": "255.255.255.0"
+    },
+    {
+        "name": "netmask_lo",
+        "value": "255.0.0.0"
+    },
+    {
+        "name": "network_eth2",
+        "value": "1.1.1.0"
+    },
+    {
+        "name": "network_eth2_0",
+        "value": "1.1.1.0"
+    },
+    {
+        "name": "network_eth2_1",
+        "value": "1.1.1.0"
+    },
+    {
+        "name": "network_eth4",
+        "value": "3.3.3.0"
+    },
+    {
+        "name": "network_lo",
+        "value": "127.0.0.0"
+    },
+    {
+        "name": "operatingsystem",
+        "value": "Debian"
+    },
+    {
+        "name": "operatingsystemmajrelease",
+        "value": "7"
+    },
+    {
+        "name": "operatingsystemrelease",
+        "value": "7.6"
+    },
+    {
+        "name": "os",
+        "value": "{\"name\"=>\"Debian\", \"family\"=>\"Debian\", \"release\"=>{\"major\"=>\"7\", \"minor\"=>\"6\", \"full\"=>\"7.6\"}, \"lsb\"=>{\"distcodename\"=>\"wheezy\", \"distid\"=>\"Debian\", \"distdescription\"=>\"Debian GNU\/Linux 7.6 (wheezy)\", \"release\"=>\"core-2.0-amd64:core-2.0-noarch:core-3.0-amd64:core-3.0-noarch:core-3.1-amd64:core-3.1-noarch:core-3.2-amd64:core-3.2-noarch:core-4.0-amd64:core-4.0-noarch:core-4.1-amd64:core-4.1-noarch:cxx-3.0-amd64:cxx-3.0-noarch:cxx-3.1-amd64:cxx-3.1-noarch:cxx-3.2-amd64:cxx-3.2-noarch:cxx-4.0-amd64:cxx-4.0-noarch:cxx-4.1-amd64:cxx-4.1-noarch:desktop-3.1-amd64:desktop-3.1-noarch:desktop-3.2-amd64:desktop-3.2-noarch:desktop-4.0-amd64:desktop-4.0-noarch:desktop-4.1-amd64:desktop-4.1-noarch:graphics-2.0-amd64:graphics-2.0-noarch:graphics-3.0-amd64:graphics-3.0-noarch:graphics-3.1-amd64:graphics-3.1-noarch:graphics-3.2-amd64:graphics-3.2-noarch:graphics-4.0-amd64:graphics-4.0-noarch:graphics-4.1-amd64:graphics-4.1-noarch:languages-3.2-amd64:languages-3.2-noarch:languages-4.0-amd64:languages-4.0-noarch:languages-4.1-amd64:languages-4.1-noarch:multimedia-3.2-amd64:multimedia-3.2-noarch:multimedia-4.0-amd64:multimedia-4.0-noarch:multimedia-4.1-amd64:multimedia-4.1-noarch:printing-3.2-amd64:printing-3.2-noarch:printing-4.0-amd64:printing-4.0-noarch:printing-4.1-amd64:printing-4.1-noarch:qt4-3.1-amd64:qt4-3.1-noarch:security-4.0-amd64:security-4.0-noarch:security-4.1-amd64:security-4.1-noarch\", \"distrelease\"=>\"7.6\", \"majdistrelease\"=>\"7\", \"minordistrelease\"=>\"6\"}}"
+    },
+    {
+        "name": "osfamily",
+        "value": "Debian"
+    },
+    {
+        "name": "partitions",
+        "value": "{\"sda1\"=>{\"uuid\"=>\"c76daa79-99b6-41db-8619-7eb4b5be640d\", \"size\"=>\"778240\", \"mount\"=>\"\/boot\", \"filesystem\"=>\"ext4\"}, \"sda2\"=>{\"uuid\"=>\"4c116b8f-97b9-4d1f-82ce-853473173be9\", \"size\"=>\"3903488\", \"filesystem\"=>\"swap\"}, \"sda3\"=>{\"uuid\"=>\"515e0237-2794-4a50-8d45-c32d3040091e\", \"size\"=>\"29294592\", \"filesystem\"=>\"ext4\"}, \"sda4\"=>{\"size\"=>\"2\"}, \"sda5\"=>{\"uuid\"=>\"28b37b2f-e7d6-43af-b048-067a0f885795\", \"size\"=>\"29292544\", \"mount\"=>\"\/var\", \"filesystem\"=>\"ext4\"}, \"sda6\"=>{\"uuid\"=>\"04ba6471-9106-415d-8790-66b5b21c532d\", \"size\"=>\"29292544\", \"mount\"=>\"\/usr\", \"filesystem\"=>\"ext4\"}, \"sda7\"=>{\"size\"=>\"29292544\", \"filesystem\"=>\"drbd\"}, \"sda8\"=>{\"uuid\"=>\"8100888b-0a36-4d92-b45a-eb9b164781bd\", \"size\"=>\"29292544\", \"mount\"=>\"\/tmp\", \"filesystem\"=>\"ext4\"}, \"sda9\"=>{\"uuid\"=>\"ea77d125-bdaa-434b-948c-8ed189543bfa\", \"size\"=>\"135518208\", \"mount\"=>\"\/home\", \"filesystem\"=>\"ext4\"}}"
+    },
+    {
+        "name": "path",
+        "value": "\/usr\/local\/sbin:\/usr\/local\/bin:\/sbin:\/bin:\/usr\/sbin:\/usr\/bin"
+    },
+    {
+        "name": "physicalprocessorcount",
+        "value": "2"
+    },
+    {
+        "name": "processor0",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor1",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor10",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor11",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor12",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor13",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor14",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor15",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor2",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor3",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor4",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor5",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor6",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor7",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor8",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processor9",
+        "value": "Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz"
+    },
+    {
+        "name": "processorcount",
+        "value": "16"
+    },
+    {
+        "name": "processors",
+        "value": "{\"models\"=>[\"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\", \"Intel(R) Xeon(R) CPU           E5540  @ 2.53GHz\"], \"count\"=>16, \"physicalcount\"=>2}"
+    },
+    {
+        "name": "productname",
+        "value": "ProLiant BL460c G6"
+    },
+    {
+        "name": "ps",
+        "value": "ps -ef"
+    },
+    {
+        "name": "puppet_vardir",
+        "value": "\/var\/lib\/puppet"
+    },
+    {
+        "name": "puppetversion",
+        "value": "3.7.1"
+    },
+    {
+        "name": "root_home",
+        "value": "\/root"
+    },
+    {
+        "name": "rubysitedir",
+        "value": "\/usr\/local\/lib\/site_ruby\/1.9.1"
+    },
+    {
+        "name": "rubyversion",
+        "value": "1.9.3"
+    },
+    {
+        "name": "selinux",
+        "value": "false"
+    },
+    {
+        "name": "serialnumber",
+        "value": "CZJ02409DG"
+    },
+    {
+        "name": "sshdsakey",
+        "value": "AAAAB3NzaC1kc3MAAACBANLNLfgOZLl9Zco5K8S67dFitpsEv5MyLIUTtHgv7wQpcVPIh1WwA3L8vtaBEVNm0VNLjgn1+lrNlrXNt6p0TjMQz7qfg5XOCfU8b4s3i0tqlr9640mjNsxCn8gsAWENJLXtLowMRHDuV5GSnPxuQAUXt5Wm5QnwH7dK3XZQbS0PAAAAFQCg8MKxZRUKOKfwgMV45mdKST++nQAAAIARWwKZf6yFW4OV5rnr02cwC00K3M4DTHCawN3IHSW77ze9NrYRbVpVfCQiR2COtQIkfVhpWHxqY\/84ukaDzRjz59UZcs4IxGM6VzBlbYDkz\/wqBY1wa1bmF8PJjTPuMZifvS+0tGX21viYFH9CNnq44UUoxMWFH4o+BnWuYc0UogAAAIEAzISnyhLSAlJwHb5U+FO7tfUn6288qTfvth7dEKoqoh4MbWvRf3+YKQreG7fS4XrSj+UoRR5hOeDJJcP6cEkQdsASHDjI482iOUsmlOSJl3LU2IjYD0gl7\/eo8GgZN7\/6h7\/bmABHhXYuPnWqaaOqGpDe8AhRGsOBmKYkeg1JD4k="
+    },
+    {
+        "name": "sshecdsakey",
+        "value": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCuZjXM5lm+zF7rWdpiMDSb9e4qFUwjD6ClcgNguWUkWrpS9mLE6QoDQbcUxp6K2PYHO6RhL1JmypkVmQ0mCK98="
+    },
+    {
+        "name": "sshfp_dsa",
+        "value": "SSHFP 2 1 fae318cdd6098748d293bc8fd77fb14e5fbe17b6\nSSHFP 2 2 d4ef89f5dd81e474cb855d146c8e57c1b4b3501cbafdfad2db8eeeb84b222a03"
+    },
+    {
+        "name": "sshfp_ecdsa",
+        "value": "SSHFP 3 1 2854b7bf01acdfe2b74ae90b89d9f8718f119236\nSSHFP 3 2 6ebe7a5f0eeb601c00898d170df91a8491ec3444517c2e1d2f264a49529f7784"
+    },
+    {
+        "name": "sshfp_rsa",
+        "value": "SSHFP 1 1 0d1bbccdba00ecd32b986b86189ea2e22ff785d2\nSSHFP 1 2 65a59e7e24a6eeb806706fbe8fd49f6e678dde50d5cc4a7f016a2dbaf056f494"
+    },
+    {
+        "name": "sshrsakey",
+        "value": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDLY8fezTQcFb0FuckSEVrWNS8+oSUeI1fXhsRt6U2hm3UOPZJKDO3blqv4oKZYygC600fcTUltn4D82db9mn5i2op+PW9iyvPgt6xnWDvg0289vLLlVAy0eZ58+QzBeYRVdMd2gDXTz1SAlwZSYn2z9\/ZkUFGX9w+IWy8mwE\/S6fuXduqPZBS73h5+5lN3YFXuJKJAoSeXs4rAlmReckdY71vTqiJOjT8AH3Y6Kx\/N1shznz7NXovkqF1yKM5\/BX7LcSx3FOLMjEgPt5tQKAs1ltByX1DgEejIbUnGhV7JAdgNbDBdfvcLoglCT2N1NyBLnFid7KX00xJYbMSPsmHp"
+    },
+    {
+        "name": "swapfree",
+        "value": "1.86 GB"
+    },
+    {
+        "name": "swapfree_mb",
+        "value": "1906.00"
+    },
+    {
+        "name": "swapsize",
+        "value": "1.86 GB"
+    },
+    {
+        "name": "swapsize_mb",
+        "value": "1906.00"
+    },
+    {
+        "name": "system_uptime",
+        "value": "{\"seconds\"=>13925842, \"hours\"=>3868, \"days\"=>161, \"uptime\"=>\"161 days\"}"
+    },
+    {
+        "name": "team_group",
+        "value": "Monitoring"
+    },
+    {
+        "name": "team_landschaft",
+        "value": "team1"
+    },
+    {
+        "name": "team_name",
+        "value": "team1"
+    },
+    {
+        "name": "team_umgebung",
+        "value": "monprod"
+    },
+    {
+        "name": "timezone",
+        "value": "CET"
+    },
+    {
+        "name": "type",
+        "value": "Blade"
+    },
+    {
+        "name": "uniqueid",
+        "value": "c20a6300"
+    },
+    {
+        "name": "uptime",
+        "value": "161 days"
+    },
+    {
+        "name": "uptime_days",
+        "value": "161"
+    },
+    {
+        "name": "uptime_hours",
+        "value": "3868"
+    },
+    {
+        "name": "uptime_seconds",
+        "value": "13925842"
+    },
+    {
+        "name": "uuid",
+        "value": "37373035-3937-5A43-4A30-323430394447"
+    },
+    {
+        "name": "virtual",
+        "value": "physical"
+    }
+]
