@@ -1,0 +1,33 @@
+# encoding: utf-8
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+$setup = <<SCRIPT	
+
+	apt-get update; 
+	
+	if [[ ! -f /apt-get-install-curl ]]; then
+		apt-get -y install curl && touch /apt-get-install-curl; 
+	fi
+	
+	if [[ ! -f /apt-get-install-mongodb ]]; then	
+		mkdir -p /var/lib/mongodb
+		cp /opt/data/backup/* /var/lib/mongodb
+	
+		apt-get -y install mongodb && touch /apt-get-install-mongodb; 
+		
+		sed -i 's/bind_ip = 127.0.0.1/bind_ip = 0.0.0.0/g' /etc/mongodb.conf 
+		service mongodb restart
+	fi
+	
+
+SCRIPT
+
+Vagrant.configure(2) do |config|
+
+	config.vm.box = "hashicorp/precise32"
+	config.vm.network :forwarded_port, host: 27017, guest: 27017, run: "always"
+	config.vm.synced_folder "../data", "/opt/data"
+	
+	config.vm.provision "shell", inline: $setup
+end
