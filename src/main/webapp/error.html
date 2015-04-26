@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Puppetory</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            min-height: 2000px;
+            padding-top: 70px;
+        }
+
+        .search-row{
+            margin-bottom: 20px;;
+        }
+
+        form {
+            padding-top: 20px;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="dist/html5shiv/html5shiv.min.js"></script>
+    <script src="dist/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <span class="navbar-brand glyphicon glyphicon-link"> Puppetory</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Server<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#server/linux">Linux</a></li>
+                        <li><a href="#sercer/unix">Unix</a></li>
+                        <li><a href="#server/windows">Windows</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">Clients</a></li>
+                <li><a href="#contact">Infrastructure</a></li>
+                <li><a href="#scheduler">Scheduler</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row no-pad">
+        <div class="col-xs-12 col-sm-3" id="sidebar">
+        </div><!--/.sidebar-->
+        <div class="col-xs-12 col-sm-10">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="jumbotron">
+                        <h2>500 - Es ist ein Fehler aufgetreten.</h2>
+                        <p>Auf dem Server ist ein Fehler aufgetreten. Bitte versuchen Sie es noch einmal oder wenden Sie sich an den Service Desk.</p>
+                    </div></div>
+            </div><!--/row-->
+        </div><!--/.col-xs-12.col-sm-9-->
+    </div><!--/row-->
+
+    <hr>
+
+    <footer>
+        <p>&copy; puppetory 2015</p>
+    </footer>
+
+</div><!--/.container-->
+
+
+<script src="dist/jquery/jquery-1.11.2.min.js"></script>
+<script src="dist/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
