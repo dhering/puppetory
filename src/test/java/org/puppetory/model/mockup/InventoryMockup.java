@@ -49,12 +49,12 @@ public class InventoryMockup implements Inventory{
     }
 
     @Override
-    public List<Component> find() {
+    public List<Component> find(String collection) {
         return components;
     }
 
     @Override
-    public List<Component> find(Filter filter) {
+    public List<Component> find(String collection, Filter filter) {
         return components;
     }
 }
