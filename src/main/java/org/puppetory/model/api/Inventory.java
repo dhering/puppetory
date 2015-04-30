@@ -10,6 +10,6 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public interface Inventory {
-    List<Component> find();
-    List<Component> find(Filter filter);
+    List<Component> find(String collection);
+    List<Component> find(String collection, Filter filter);
 }
