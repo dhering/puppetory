@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
-    <context:component-scan base-package="org.puppetory.web" />
+    <context:component-scan base-package="org.puppetory" />
 
     <annotation-driven />
 
@@ -24,7 +24,12 @@
 
     <view-controller path="/" view-name="index" />
 
-    <!--
-    <import  resource="classpath*:com/company/**/dao.xml"/>
-    -->
+
+	<beans:bean id="linuxServerOverviewWebReport" class="org.puppetory.factories.ReportFactory">
+		<beans:property name="name" value="Linux Server Overview" />
+		<beans:property name="collection" value="server" />
+		<beans:property name="filterString" value="" />
+		<beans:property name="reportClass" value="org.puppetory.report.CollectionWebOverviewReport" />
+	</beans:bean>
+
 </beans:beans>
