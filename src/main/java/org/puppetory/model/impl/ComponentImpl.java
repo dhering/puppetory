@@ -1,26 +1,31 @@
 package org.puppetory.model.impl;
 
+import java.util.List;
+
 import org.puppetory.model.api.Component;
 import org.puppetory.model.api.Fact;
 
-import java.util.Set;
-
-/**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 26.04.15
- * Time: 14:53
- * To change this template use File | Settings | File Templates.
- */
 public class ComponentImpl implements Component {
 
-    Set<Fact> facts;
+	List<Fact> facts;
 
-    public ComponentImpl(Set<Fact> facts) {
+    public ComponentImpl(List<Fact> facts) {
         this.facts = facts;
     }
 
-    public Set<Fact> getFacts() {
+    public List<Fact> getFacts() {
         return facts;
     }
+
+	@Override
+	public Fact getFact(String name) {
+		
+		for(Fact fact : facts){
+			if(fact.getName().equals(name)){
+				return fact;
+			}
+		}
+		
+		return null;
+	}
 }
