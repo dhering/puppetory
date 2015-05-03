@@ -1,14 +1,8 @@
 package org.puppetory.model.api;
 
-import java.util.Set;
+import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 26.04.15
- * Time: 14:34
- * To change this template use File | Settings | File Templates.
- */
 public interface Component {
-    Set<Fact> getFacts();
+	public List<Fact> getFacts();
+    public Fact getFact(String name);
 }

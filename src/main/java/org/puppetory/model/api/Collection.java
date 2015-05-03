@@ -1,8 +1,8 @@
 package org.puppetory.model.api;
 
-import java.util.Set;
+import java.util.List;
 
 public interface Collection {
-    public Set<Component> getComponents();
+    public List<Component> getComponents();
     public Filter getFilter();
 }
