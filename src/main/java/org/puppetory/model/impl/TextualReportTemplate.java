@@ -13,8 +13,25 @@ import org.puppetory.model.api.Report;
 public abstract class TextualReportTemplate implements Report {
 
     protected Collection collection;
-
+    protected String name;
+    
     public TextualReportTemplate(Collection collection){
-
+    	this.collection = collection;
+    	this.name = this.getClass().getSimpleName();
     }
+
+    public TextualReportTemplate(Collection collection, String name){
+    	this.collection = collection;
+    	this.name = name;
+    }
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+    
+    
 }
