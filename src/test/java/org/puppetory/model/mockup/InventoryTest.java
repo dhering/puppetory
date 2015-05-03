@@ -1,14 +1,13 @@
 package org.puppetory.model.mockup;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.puppetory.model.api.Component;
+import org.puppetory.mockups.InventoryMockup;
+import org.puppetory.model.api.Collection;
 import org.puppetory.model.api.Inventory;
-
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
 
 public class InventoryTest {
 
@@ -21,9 +20,9 @@ public class InventoryTest {
 
     @Test
     public void findAllTest(){
-        List<Component> components = inventory.find("");
+        Collection components = inventory.find("");
 
-        assertEquals(components.size(), 1);
+        assertEquals(components.getComponents().size(), 2);
     }
 
     @Ignore
