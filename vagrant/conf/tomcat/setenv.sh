@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export CATALINA_OPTS="$CATALINA_OPTS -Xms128m"
+export CATALINA_OPTS="$CATALINA_OPTS -Xmx512m"

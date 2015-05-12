@@ -1,0 +1,27 @@
+# encoding: utf-8
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+
+	config.vm.box = "hashicorp/precise32"
+
+	config.vm.provider "virtualbox" do |v|
+      v.memory = 1024
+      v.cpus = 2
+    end
+
+	config.vm.network :forwarded_port, host: 8080, guest: 8080, run: "always"
+	config.vm.network :forwarded_port, host: 27017, guest: 27017, run: "always"
+
+	config.vm.synced_folder "../../", "/var/puppetory"
+
+    config.vm.provision "shell", path: "../scripts/apt-get-update.sh"
+	config.vm.provision "shell", path: "../scripts/install-java.sh"
+	config.vm.provision "shell", path: "../scripts/install-maven.sh"
+	config.vm.provision "shell", path: "../scripts/install-tomcat.sh"
+	config.vm.provision "shell", path: "../scripts/init-db.sh"
+	config.vm.provision "shell", path: "../scripts/deploy-puppetory.sh"
+
+
+end
