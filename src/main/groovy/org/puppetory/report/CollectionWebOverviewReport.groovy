@@ -1,12 +1,45 @@
 package org.puppetory.report
 
-import org.puppetory.model.impl.StructuredFact;
+import org.puppetory.model.api.Fact
+import org.puppetory.model.impl.MultipleValueFact
+import org.puppetory.model.impl.StructuredFact
 import org.puppetory.model.impl.TextualReportTemplate
 
 class CollectionWebOverviewReport extends TextualReportTemplate{
 
     StringWriter writer;
     def builder;
+    def toSkip = ["sshdsakey","sshrsakey","sshecdsakey","sshfp_dsa","sshfp_ecdsa","sshfp_rsa"];
+
+    def tabs = [
+            OS: [
+                    operatingsystem:"OS name",
+                    operatingsystemrelease:"OS Version",
+                    system_uptime: "uptime",
+                    architecture: "architecture"
+            ],
+            Hardware: [
+                    serialnumber: "serial number",
+                    productname: "product name",
+                    processor: "processor",
+                    memorysize:"memory",
+                    memoryfree:"free memory",
+                    swapsize: "swap",
+                    puppetory_pci: "PCI devices",
+                    type: "type"
+            ],
+            Software: [
+                    puppetory_servicesoftware: "service software",
+                    puppetory_software: "software"
+            ],
+            Organisation: [
+                    puppetory_server_anlagennummer: "Anlagenummer",
+                    puppetory_server_kostenstelle: "Kostenstelle",
+                    puppetory_server_lieferdatum: "Lieferdatum",
+                    puppetory_server_status: "Status",
+                    puppetory_server_verwendungszweck: "Verwendungszweck"
+            ]
+            ]
 
     CollectionWebOverviewReport(org.puppetory.model.api.Collection collection) {
         super(collection);
@@ -16,73 +49,169 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
 
 	@Override
     String toString() {
-		
     	builder.div([class:"col-lg-12 col-md-12 col-sm-12 col-xs-12"]){
+            builder.h1(){
+                yield(getName(), false)
+            }
+
 			collection.components.eachWithIndex { component, componentCount ->
-				
-				builder.div([class:"panel panel-primary"]){
-					builder.div([class:"panel-heading"]){
-						def nameFact = component.getFact("name");
-						builder.yield("${nameFact.value}", true)
-						builder.a([class:"btn btn-default btn-xs pull-right", href:"#", role:"button"]){
+
+                String uuid = component.getFact("uuid").value;
+
+				builder.div([class:"panel panel-default"]){
+					div([class:"panel-heading"]){
+						def nameFact = component.getFact("hostname");
+						yield("${nameFact.value}", true)
+						a([class:"btn btn-default btn-xs pull-right toggle-details", href:"#", role:"button"]){
 							yield("View details <span class=\"caret\"></span>", false)
 						}
 					}
+
+                    builder.div([class:"panel-body hide"]){
+                        div([role:"tabpanel"]){
+                            ul([class:"nav nav-tabs", role:"tablist"]){
+                                tabs.eachWithIndex { tab, index ->
+                                    def id = uuid + "--" + tab.key;
+                                    def classes = [role:"presentation"];
+                                    if(index==0) classes["class"] = "active";
+                                    builder.li(classes){
+                                        a([href:"#"+id, "aria-controls":id, role:"tab", "data-toggle":"tab"]){
+                                            yield(tab.key, true);
+                                        }
+                                    }
+                                }
+
+                                li([role:"presentation"]){
+                                    def id = uuid + "--All";
+                                    a([href:"#"+id, "aria-controls":id, role:"tab", "data-toggle":"tab"]){
+                                        yield("All", true);
+                                    }
+                                }
+                            }
+
+                            div([class:"tab-content"]){
+                                tabs.eachWithIndex { tab, index ->
+                                    def id = uuid + "--" + tab.key;
+                                    def classes = [class:"tab-pane",role:"tabpanel", id:id];
+                                    if(index==0) classes["class"] = "tab-pane active";
+                                    builder.div(classes){
+                                        printTable(builder, component.facts, tab.value);
+                                    }
+                                }
+
+                                div([class:"tab-pane", role:"tabpanel", id:uuid + "--All"]){
+                                    printTable(builder, component.facts, null);
+                                }
+                            }
+                        }
+                    }
 				}
-				
-				div([class:"panel-body"]){
-					table([class:"table table-striped"]){
-						tr(){
-							th(){
-								yield("Fact", true)
-							}
-							th([colspan:2]){
-								yield("Value", true)
-							}
-						}
-						component.facts.eachWithIndex { fact, factCount ->							
-							if(fact instanceof StructuredFact){
-								
-								fact.facts.eachWithIndex { subfact, subfactCount ->
-									if(subfactCount == 0){
-										builder.tr(){
-											td([rowspan:fact.facts.size]){
-												yield(fact.name, true)
-											}
-											td(){
-												yield(subfact.name, true)
-											}
-											td(){
-												yield(subfact.value, true)
-											}
-										}
-									} else {
-										builder.tr(){
-											td(){
-												yield(subfact.name, true)
-											}
-											td(){
-												yield(subfact.value, true)
-											}
-										}
-									}
-								}
-							} else {
-								builder.tr(){
-									td(){
-										yield(fact.name, true)
-									}
-									td([colspan:2]){
-										yield(fact.value, true)
-									}
-								}
-							}
-						}
-					}
-				}					
 			}
 		}
        
         return writer.toString();
+    }
+
+    void printTable(def builder, def facts, def nameMapping){
+        builder.table([class:"table table-striped"]){
+            tr(){
+                th(){
+                    yield("Fact", true)
+                }
+                th([colspan:2]){
+                    yield("Value", true)
+                }
+            }
+
+            def selectedFacts = [];
+            if(nameMapping == null){
+                selectedFacts = facts;
+            } else {
+                nameMapping.each { key, name ->
+                    facts.each { fact ->
+                        if(fact.name == key){
+                            selectedFacts.add(fact);
+                        }
+                    }
+                }
+            }
+
+            selectedFacts.eachWithIndex { fact, factCount ->
+                if(toSkip.contains(fact.name)){
+
+                } else if(fact instanceof StructuredFact){
+
+                    fact.facts.eachWithIndex { subfact, subfactCount ->
+                        if(subfactCount == 0){
+                            builder.tr(){
+                                td([rowspan:fact.facts.size]){
+                                    yield(mapFactName(fact.name, nameMapping), true)
+                                }
+                                td(){
+                                    yield(subfact.name, true)
+                                }
+                                td(){
+                                    //yield(subfact.value, true)
+                                    printFactValue(builder, subfact);
+                                }
+                            }
+                        } else {
+                            builder.tr(){
+                                td(){
+                                    yield(subfact.name, true)
+                                }
+                                td(){
+                                    //yield(subfact.value, true)
+                                    printFactValue(builder, subfact);
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    builder.tr(){
+                        td(){
+                            yield(mapFactName(fact.name, nameMapping), true)
+                        }
+                        td([colspan:2]){
+                            printFactValue(builder, fact);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    String mapFactName(String key, def nameMapping){
+
+        if(nameMapping == null){
+            return key;
+        }
+
+        String name = nameMapping[key];
+
+        return name == null || name.empty ? key : name;
+    }
+
+    void printFactValue(def builder, Fact fact){
+        if(fact instanceof MultipleValueFact){
+            builder.ul(){
+                ((MultipleValueFact) fact).values.each { value ->
+                   builder.li(){
+                       builder.yield(value, true);
+                   }
+                }
+            }
+        } else if (fact instanceof StructuredFact){
+            builder.ul(){
+                ((StructuredFact) fact).facts.each { structFact ->
+                    builder.li(){
+                        builder.yield(structFact.name + ": ", true);
+                        printFactValue(builder, structFact);
+                    }
+                }
+            }
+        } else {
+            builder.yield(fact.value, true);
+        }
     }
 }
