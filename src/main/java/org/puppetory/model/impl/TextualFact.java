@@ -37,6 +37,6 @@ public class TextualFact implements Fact{
 
 	@Override
 	public String toString() {
-		return getName() + ": " + getValue();
+		return getName() + ": '" + getValue() + "'";
 	}
 }

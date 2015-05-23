@@ -1,8 +1,8 @@
 package org.puppetory.model.impl;
 
-import java.util.List;
-
 import org.puppetory.model.api.Fact;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -42,12 +42,12 @@ public class StructuredFact implements Fact{
 
 		String out = "";
 		
-		for(int i=0; i<0; i++){
+		for(int i=0; i<facts.size(); i++){
 			Fact fact = facts.get(i);
 			out += i>0 ? ", " + fact.toString() : fact.toString(); 
 		}
 		
-		return "[" + out + "]";
+		return "{" + out + "}";
 	}
 
 	@Override
