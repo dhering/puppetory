@@ -23,15 +23,16 @@ public class WebReportController implements ApplicationContextAware{
 	
 	@RequestMapping("/report/{reportId}")
 	public String showReport(@PathVariable String reportId, Model model) throws ResourceNotFoundException{
-		
+
 		try {
 			Report report = (Report) applicationContext.getBean(reportId);
 			model.addAttribute("report", report.toString());
 		} catch (BeansException e) {
+            e.printStackTrace();
 			throw new ResourceNotFoundException();
 		}
 				
-		return "index";		
+		return "webReport";
 	}
 
 	
