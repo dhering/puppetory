@@ -61,7 +61,17 @@
 			<artifactId>mockito-core</artifactId>
 			<version>1.10.19</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
@@ -94,9 +104,40 @@
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>9.3.0.M1</version>
 				<configuration>
-					<war>${project.basedir}/target/${project.artifactId}-${project.version}.war</war>
+                    <scanIntervalSeconds>5</scanIntervalSeconds>
+                    <systemProperties>
+                        <systemProperty>
+                            <name>spring.profiles.active</name>
+                            <value>development</value>
+                        </systemProperty>
+
+                        <!-- -Xdebug -agentlib:jdwp=transport=dt_socket,address=9999,server=y,suspend=n -->
+                        <systemProperty>
+                            <name>agentlib:jdwp</name>
+                            <value>transport=dt_socket,address=9999,server=y,suspend=n</value>
+                        </systemProperty>
+                        <systemProperty>
+                            <name>debug</name>
+                        </systemProperty>
+                    </systemProperties>
 				</configuration>
 			</plugin>
+
+            <!-- JavaDoc - API-documentation -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.6.1</version>
+                <configuration>
+                    <!-- Enable aggregation for multimodule projects. -->
+                    <aggregate>true</aggregate>
+                    <show>public</show>
+                    <charset>utf-8</charset>
+                    <docencoding>utf-8</docencoding>
+                    <encoding>utf-8</encoding>
+                    <excludePackageNames>org.puppetory.model.impl.*</excludePackageNames>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 
