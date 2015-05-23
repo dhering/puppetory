@@ -1,7 +1,5 @@
 package org.puppetory.factories;
 
-import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.puppetory.dummies.CollectionDummies;
@@ -10,6 +8,7 @@ import org.puppetory.model.api.Inventory;
 import org.puppetory.model.api.Report;
 import org.puppetory.model.impl.InventoryImpl;
 
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 public class ReportFactoryTest {
@@ -33,7 +32,7 @@ public class ReportFactoryTest {
 		
 		Report report = factory.getObject();
 		
-		assertEquals("[name: simplecollection: [name: simplecollection][test: fact]]", report.toString());
+		assertEquals("[name: 'dummyFact': [name: dummyFact][foo: bar]]", report.toString());
 	}
 	
 	@Test
