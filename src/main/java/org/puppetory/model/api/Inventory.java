@@ -1,7 +1,5 @@
 package org.puppetory.model.api;
 
-import java.util.List;
-
 /**
  * Created with IntelliJ IDEA.
  * User: dennish
