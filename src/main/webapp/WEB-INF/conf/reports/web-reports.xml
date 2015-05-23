@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="abstractServerOverviewWebReport" class="org.puppetory.factories.ReportFactory" scope="prototype">
+        <property name="name" value="Linux Server Overview" />
+        <property name="inventory" ref="inventory" />
+        <property name="collection" value="server_generalized" />
+        <property name="filterString" value="" />
+        <property name="reportClass" value="org.puppetory.report.CollectionWebOverviewReport" />
+    </bean>
+
+    <bean id="linuxServerOverviewWebReport" parent="abstractServerOverviewWebReport">
+        <property name="name" value="Linux Server Overview" />
+        <property name="filterString" value="" />
+    </bean>
+
+    <bean id="unixServerOverviewWebReport" parent="abstractServerOverviewWebReport">
+        <property name="name" value="Unix Server Overview" />
+        <property name="filterString" value="" />
+    </bean>
+
+    <bean id="windowsServerOverviewWebReport" parent="abstractServerOverviewWebReport">
+        <property name="name" value="Windows Server Overview" />
+        <property name="filterString" value="" />
+    </bean>
+
+</beans>
