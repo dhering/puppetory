@@ -1,14 +1,13 @@
 package org.puppetory.factories;
 
-import java.lang.reflect.Constructor;
-
 import org.puppetory.model.api.Collection;
 import org.puppetory.model.api.Inventory;
 import org.puppetory.model.api.Report;
 import org.puppetory.model.impl.FilterImpl;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import java.lang.reflect.Constructor;
 
 public class ReportFactory implements FactoryBean<Report>, InitializingBean{
 
@@ -21,12 +20,16 @@ public class ReportFactory implements FactoryBean<Report>, InitializingBean{
 	
 	private Class<?> beanClass;
 	private Constructor<?> beanConstructor;
-		
-	@Autowired
+
+    public ReportFactory() {
+        this.inventory = null;
+    }
+
+    //@Autowired
 	public ReportFactory(Inventory inventory) {
 		this.inventory = inventory;
 	}
-	
+
 	public Inventory getInventory() {
 		return inventory;
 	}
@@ -73,7 +76,6 @@ public class ReportFactory implements FactoryBean<Report>, InitializingBean{
 		
 		Report report =  (Report) this.beanConstructor.newInstance(new Object[] { result });
 		report.setName(name);
-
 		
 		return report;
 	}
