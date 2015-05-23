@@ -1,13 +1,10 @@
 package org.puppetory.model.impl;
 
-import java.util.List;
-
 import org.puppetory.model.api.Collection;
 import org.puppetory.model.api.Component;
 import org.puppetory.model.api.Filter;
-import org.puppetory.model.api.Inventory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 public class CollectionImpl implements Collection {
 
@@ -29,4 +26,20 @@ public class CollectionImpl implements Collection {
 		return filter;
 	}
 
+    @Override
+    public String toString() {
+        String out = "";
+
+        for(int i=0; i<components.size(); i++){
+            Component component = components.get(i);
+            out += i>0 ? ", " + component.toString() : component.toString();
+        }
+
+        return "CollectionImpl([" + out + "])";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return this.toString().equals(obj.toString());
+    }
 }
