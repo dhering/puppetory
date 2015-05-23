@@ -4,13 +4,6 @@ import org.puppetory.model.api.Fact;
 
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 26.04.15
- * Time: 14:50
- * To change this template use File | Settings | File Templates.
- */
 public class ListedFact extends StructuredFact {
 
 
