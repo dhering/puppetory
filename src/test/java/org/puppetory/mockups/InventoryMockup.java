@@ -1,21 +1,11 @@
 package org.puppetory.mockups;
 
+import org.puppetory.model.api.*;
+import org.puppetory.model.impl.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import org.puppetory.model.api.Collection;
-import org.puppetory.model.api.Component;
-import org.puppetory.model.api.Fact;
-import org.puppetory.model.api.Filter;
-import org.puppetory.model.api.Inventory;
-import org.puppetory.model.impl.CollectionImpl;
-import org.puppetory.model.impl.ComponentImpl;
-import org.puppetory.model.impl.FilterImpl;
-import org.puppetory.model.impl.StructuredFact;
-import org.puppetory.model.impl.TextualFact;
-import org.springframework.stereotype.Service;
-
-@Service
 public class InventoryMockup implements Inventory{
 
     Collection collection;
