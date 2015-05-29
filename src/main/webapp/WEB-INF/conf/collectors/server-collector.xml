@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:task="http://www.springframework.org/schema/task"
+             xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+    <bean id="serverCollectorDatabase" class="org.puppetory.factories.DbFactory">
+        <property name="propertyPrefix" value="server.collector." />
+    </bean>
+
+    <bean id="serverCollector" class="org.puppetory.collectors.impl.ServerCollector" />
+
+    <task:scheduled-tasks scheduler="collectorsScheduler">
+        <task:scheduled ref="serverCollector" method="collect" fixed-delay="30000" initial-delay="30000"/>
+    </task:scheduled-tasks>
+
+</beans>
