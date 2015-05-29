@@ -13,6 +13,7 @@ import org.bson.BsonString;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.puppetory.factories.ConfigFactory;
 import org.puppetory.factories.DbFactory;
@@ -30,9 +31,14 @@ public class MongoTest {
     @Before
     public void setup() throws Exception{
         Configuration config = (new ConfigFactory()).getObject();
-        this.database = (new DbFactory(config)).getObject();
+
+        DbFactory dbFactory = new DbFactory();
+        dbFactory.setConfig(config);
+
+        this.database = dbFactory.getObject();
     }
 
+    @Ignore
     @Test
     public void databaseConnectionTest() {
 
