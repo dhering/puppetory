@@ -7,29 +7,45 @@ import com.mongodb.client.MongoDatabase;
 import org.apache.commons.configuration.Configuration;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 
-//@Profile("production")
-@Service("database")
 public class DbFactory implements FactoryBean<MongoDatabase> {
 
-    Configuration config;
+    private Configuration config;
+    private String propertyPrefix;
+
+    public DbFactory() {
+        this.config = null;
+        this.propertyPrefix = "";
+    }
+
+    public Configuration getConfig() {
+        return config;
+    }
 
     @Autowired
-    public DbFactory(Configuration Configuration) {
-        this.config = Configuration;
+    public void setConfig(Configuration config) {
+        this.config = config;
+    }
+
+    public String getPropertyPrefix() {
+        return propertyPrefix;
+    }
+
+    @Autowired
+    public void setPropertyPrefix(String propertyPrefix) {
+        this.propertyPrefix = propertyPrefix;
     }
 
     @Override
     public MongoDatabase getObject() throws Exception {
 
-        String host = config.getString("db.host", ServerAddress.defaultHost());
-        int    port = config.getInt("db.port", ServerAddress.defaultPort());
-        String database = config.getString("db.database", "puppetory");
-        String user = config.getString("db.user");
-        String password = config.getString("db.password");
+        String host = config.getString(propertyPrefix + "db.host", ServerAddress.defaultHost());
+        int    port = config.getInt(propertyPrefix + "db.port", ServerAddress.defaultPort());
+        String database = config.getString(propertyPrefix + "db.database", "puppetory");
+        String user = config.getString(propertyPrefix + "db.user");
+        String password = config.getString(propertyPrefix + "db.password");
 
         ServerAddress serverAddress = new ServerAddress(host, port);
 
