@@ -5,8 +5,16 @@ import org.puppetory.model.api.Filter;
 public class FilterImpl implements Filter {
 
 	private String query;
-	
-	@Override
+
+    public FilterImpl() {
+        query = "";
+    }
+
+    public FilterImpl(String query) {
+        this.query = query;
+    }
+
+    @Override
 	public String getQuery() {
 		return query;
 	}
