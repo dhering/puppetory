@@ -1,7 +1,9 @@
 package org.puppetory.model.impl;
 
+import org.puppetory.model.FactListComparator;
 import org.puppetory.model.api.Fact;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -41,6 +43,8 @@ public class StructuredFact implements Fact{
 	public String getValue() {
 
 		String out = "";
+
+        Collections.sort(facts, FactListComparator.getInstance());
 		
 		for(int i=0; i<facts.size(); i++){
 			Fact fact = facts.get(i);
