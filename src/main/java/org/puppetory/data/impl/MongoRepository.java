@@ -3,6 +3,7 @@ package org.puppetory.data.impl;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.FindOneAndUpdateOptions;
 import org.bson.Document;
 import org.puppetory.data.api.DbModelMapper;
 import org.puppetory.data.api.Repository;
@@ -12,6 +13,7 @@ import org.puppetory.model.api.Filter;
 import org.puppetory.model.impl.CollectionImpl;
 import org.puppetory.model.impl.FilterImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.LinkedList;
@@ -33,7 +35,7 @@ public class MongoRepository implements Repository{
     private DbModelMapper mapper;
 
     @Autowired
-    public MongoRepository(MongoDatabase database, DbModelMapper dbModelMapper) {
+    public MongoRepository(@Qualifier("database") MongoDatabase database, DbModelMapper dbModelMapper) {
         this.database = database;
         this.mapper = dbModelMapper;
     }
@@ -73,5 +75,20 @@ public class MongoRepository implements Repository{
         }
 
         return new CollectionImpl(components, filter);
+    }
+
+    @Override
+    public void insert(String collectionName, Component component) {
+        Document document = mapper.getDocumentFromComponent(component);
+
+        database.getCollection(collectionName).insertOne(document);
+    }
+
+    @Override
+    public void upsert(String collectionName, Component component, Filter filter) {
+        Document document = mapper.getDocumentFromComponent(component);
+        Document docFilter = Document.parse(filter.getQuery());
+
+        database.getCollection(collectionName).findOneAndUpdate(docFilter, new Document("$set", document), new FindOneAndUpdateOptions().upsert(true));
     }
 }
