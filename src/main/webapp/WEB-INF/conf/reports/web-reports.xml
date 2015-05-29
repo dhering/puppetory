@@ -5,11 +5,10 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="abstractServerOverviewWebReport" class="org.puppetory.factories.ReportFactory" scope="prototype">
+        <constructor-arg index="0" value="org.puppetory.report.CollectionWebOverviewReport" />
         <property name="name" value="Linux Server Overview" />
-        <property name="inventory" ref="inventory" />
         <property name="collection" value="server_generalized" />
         <property name="filterString" value="" />
-        <property name="reportClass" value="org.puppetory.report.CollectionWebOverviewReport" />
     </bean>
 
     <bean id="linuxServerOverviewWebReport" parent="abstractServerOverviewWebReport">
