@@ -10,4 +10,7 @@ package org.puppetory.model.api;
 public interface Inventory {
 	public Collection find(String collection);
 	public Collection find(String collection, Filter filter);
+
+    public void insert(String collectionName, Component component);
+    public void upsert(String collectionName, Component component, Filter filter);
 }
