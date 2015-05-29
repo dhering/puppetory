@@ -1,39 +1,37 @@
 package org.puppetory.factories;
 
 import org.puppetory.model.api.Collection;
+import org.puppetory.model.api.Filter;
 import org.puppetory.model.api.Inventory;
 import org.puppetory.model.api.Report;
 import org.puppetory.model.impl.FilterImpl;
-import org.springframework.beans.factory.FactoryBean;
-import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.lang.reflect.Constructor;
 
-public class ReportFactory implements FactoryBean<Report>, InitializingBean{
+public class ReportFactory{
 
 	private Inventory inventory;
 	
 	private String name;
 	private String collection;
 	private String filterString;
-	private String reportClass;
 	
 	private Class<?> beanClass;
 	private Constructor<?> beanConstructor;
 
-    public ReportFactory() {
+    public ReportFactory(String reportClass) throws ClassNotFoundException, NoSuchMethodException {
+        beanClass = Class.forName(reportClass);
+        this.beanConstructor = beanClass.getConstructor(Collection.class);
+
         this.inventory = null;
     }
-
-    //@Autowired
-	public ReportFactory(Inventory inventory) {
-		this.inventory = inventory;
-	}
 
 	public Inventory getInventory() {
 		return inventory;
 	}
 
+    @Autowired
 	public void setInventory(Inventory inventory) {
 		this.inventory = inventory;
 	}
@@ -44,14 +42,6 @@ public class ReportFactory implements FactoryBean<Report>, InitializingBean{
 
 	public void setFilterString(String filterString) {
 		this.filterString = filterString;
-	}
-
-	public String getReportClass() {
-		return reportClass;
-	}
-
-	public void setReportClass(String reportClass) {
-		this.reportClass = reportClass;
 	}
 
 	public String getName() {
@@ -70,30 +60,16 @@ public class ReportFactory implements FactoryBean<Report>, InitializingBean{
 		this.collection = collection;
 	}
 
-	@Override
-	public Report getObject() throws Exception {
-		Collection result = inventory.find(collection, new FilterImpl());
-		
+    public Report createReport() throws Exception {
+        return createReport(new FilterImpl());
+    }
+
+	public Report createReport(Filter filter) throws Exception {
+		Collection result = inventory.find(collection, filter);
+
 		Report report =  (Report) this.beanConstructor.newInstance(new Object[] { result });
 		report.setName(name);
 		
 		return report;
-	}
-
-	@Override
-	public Class<?> getObjectType() {
-		final Class<?> clazz = this.beanClass;
-		return clazz;
-	}
-
-	@Override
-	public boolean isSingleton() {
-		return false;
-	}
-
-	@Override
-	public void afterPropertiesSet() throws Exception {
-		beanClass = Class.forName(reportClass);
-		this.beanConstructor = beanClass.getConstructor(Collection.class);
 	}
 }
