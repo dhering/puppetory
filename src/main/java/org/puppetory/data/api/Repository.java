@@ -1,6 +1,7 @@
 package org.puppetory.data.api;
 
 import org.puppetory.model.api.Collection;
+import org.puppetory.model.api.Component;
 import org.puppetory.model.api.Filter;
 
 /**
@@ -13,4 +14,7 @@ import org.puppetory.model.api.Filter;
 public interface Repository {
     public Collection find(String collection);
     public Collection find(String collection, Filter filter);
+
+    void insert(String collectionName, Component component);
+    void upsert(String collectionName, Component component, Filter filter);
 }
