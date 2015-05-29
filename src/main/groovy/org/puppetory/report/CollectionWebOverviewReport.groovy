@@ -151,7 +151,6 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
                                     yield(subfact.name, true)
                                 }
                                 td(){
-                                    //yield(subfact.value, true)
                                     printFactValue(builder, subfact);
                                 }
                             }
@@ -161,7 +160,6 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
                                     yield(subfact.name, true)
                                 }
                                 td(){
-                                    //yield(subfact.value, true)
                                     printFactValue(builder, subfact);
                                 }
                             }
@@ -210,6 +208,17 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
                     }
                 }
             }
+        } else if (fact.value.indexOf(';') > 0){
+            def lines = fact.value.split(';');
+
+            for (int i=0; i<lines.size(); i++){
+                if(i>0){
+                    builder.yield("<br />", false);
+                }
+                builder.yield(lines[i], true);
+            }
+
+
         } else {
             builder.yield(fact.value, true);
         }
