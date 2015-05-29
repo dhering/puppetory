@@ -2,6 +2,9 @@ package org.puppetory.data.api;
 
 import org.bson.Document;
 import org.puppetory.model.api.Component;
+import org.puppetory.model.api.Fact;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,4 +16,8 @@ import org.puppetory.model.api.Component;
 public interface DbModelMapper {
     Document getDocumentFromComponent(Component component);
     Component getComponentFromDocument(Document document);
+    Document getDocumentFromFacts(List<Fact> facts);
+    List<Fact> getFactsFromDocument(Document document);
+
+    Fact getFactFromDocument(Document document, String factName);
 }
