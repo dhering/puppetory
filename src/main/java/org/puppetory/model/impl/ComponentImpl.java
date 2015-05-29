@@ -1,13 +1,20 @@
 package org.puppetory.model.impl;
 
+import org.puppetory.model.FactListComparator;
 import org.puppetory.model.api.Component;
 import org.puppetory.model.api.Fact;
 
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ComponentImpl implements Component {
 
 	List<Fact> facts;
+
+    public ComponentImpl() {
+        this.facts = new LinkedList<Fact>();
+    }
 
     public ComponentImpl(List<Fact> facts) {
         this.facts = facts;
@@ -30,8 +37,15 @@ public class ComponentImpl implements Component {
 	}
 
     @Override
+    public void addFact(Fact fact) {
+        facts.add(fact);
+    }
+
+    @Override
     public String toString() {
         String out = "";
+
+        Collections.sort(facts, FactListComparator.getInstance());
 
         for(int i=0; i<facts.size(); i++){
             Fact fact = facts.get(i);
