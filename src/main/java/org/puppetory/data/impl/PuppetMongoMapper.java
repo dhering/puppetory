@@ -1,5 +1,7 @@
 package org.puppetory.data.impl;
 
+import org.bson.BsonArray;
+import org.bson.BsonString;
 import org.bson.Document;
 import org.puppetory.data.api.DbModelMapper;
 import org.puppetory.model.api.Component;
@@ -38,34 +40,47 @@ public class PuppetMongoMapper implements DbModelMapper {
         return new ComponentImpl(getFactsFromDocument(document));
     }
 
+    @Override
     public List<Fact> getFactsFromDocument(Document document) {
 
         List<Fact> facts = new ArrayList<Fact>();
 
         if(document != null){
-            for(String key : document.keySet()){
-                Object value = document.get(key);
+            for(String factName : document.keySet()){
 
-                if(value instanceof Document){
-                    facts.add(new StructuredFact(key, getFactsFromDocument((Document) value)));
-                } else if (value instanceof List){
-
-                    List<Object> values =  (List<Object>) value;
-
-                    String[] allStringValues = getAllStrings(values);
-
-                    if(allStringValues != null){
-                        facts.add(new MultipleValueFact(key, allStringValues));
-                    } else {
-                        facts.add(new ListedFact(key, getFactsFromDocuments((List<Document>) value)));
-                    }
-                } else {
-                    facts.add(new TextualFact(key, value.toString()));
+                Fact fact = getFactFromDocument(document, factName);
+                if (fact != null) {
+                    facts.add(fact);
                 }
             }
         }
 
         return facts;
+    }
+
+    @Override
+    public Fact getFactFromDocument(Document document, String factName){
+        Object value = document.get(factName);
+        Fact fact = null;
+
+        if(value instanceof Document){
+            fact = new StructuredFact(factName, getFactsFromDocument((Document) value));
+        } else if (value instanceof List){
+
+            List<Object> values =  (List<Object>) value;
+
+            String[] allStringValues = getAllStrings(values);
+
+            if(allStringValues != null){
+                fact = new MultipleValueFact(factName, allStringValues);
+            } else {
+                fact = new ListedFact(factName, getFactsFromDocuments((List<Document>) value));
+            }
+        } else {
+            fact = new TextualFact(factName, value.toString());
+        }
+
+        return fact;
     }
 
     public List<Fact> getFactsFromDocuments(List<Document> documents) {
@@ -101,6 +116,7 @@ public class PuppetMongoMapper implements DbModelMapper {
         return array;
     }
 
+    @Override
     public Document getDocumentFromFacts(List<Fact> facts){
 
         Document document = new Document();
@@ -123,6 +139,12 @@ public class PuppetMongoMapper implements DbModelMapper {
         }else if(fact instanceof PersistentTextualFact){
             document.put("name", fact.getName());
             document.put("value", fact.getValue());
+        }else if(fact instanceof MultipleValueFact){
+            BsonArray factList = new BsonArray();
+            for(String value : ((MultipleValueFact) fact).getValues()){
+                factList.add(new BsonString(value));
+            }
+            document.put(fact.getName(), factList);
         } else {
             document.put(fact.getName(), fact.getValue());
         }
