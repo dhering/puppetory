@@ -25,7 +25,10 @@ public class MultipleValueFact implements Fact{
         String out = "";
 
         for(int i=0; i<values.length; i++){
-            out += i>0 ? ", " + values[i] : values[i];
+            if(i>0){
+                out += ", ";
+            }
+            out += '\'' + values[i] + "\'";
         }
 
         return "[" + out + "]";

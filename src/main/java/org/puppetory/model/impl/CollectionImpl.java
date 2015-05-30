@@ -42,4 +42,9 @@ public class CollectionImpl implements Collection {
     public boolean equals(Object obj) {
         return this.toString().equals(obj.toString());
     }
+
+    @Override
+    public int hashCode() {
+        return toString().hashCode();
+    }
 }

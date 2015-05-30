@@ -59,4 +59,9 @@ public class ComponentImpl implements Component {
     public boolean equals(Object obj) {
         return this.toString().equals(obj.toString());
     }
+
+    @Override
+    public int hashCode() {
+        return toString().hashCode();
+    }
 }
