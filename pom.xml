@@ -138,6 +138,63 @@
                     <excludePackageNames>org.puppetory.model.impl.*</excludePackageNames>
                 </configuration>
             </plugin>
+
+            <!-- Surefire - JUnit testing-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <!-- Required to properly link JXR -->
+                    <xrefLocation>${project.reporting.outputDirectory}/../xref-test</xrefLocation>
+                </configuration>
+            </plugin>
+
+            <!-- JDepend - Package dependencies -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jdepend-maven-plugin</artifactId>
+                <version>2.0-beta-2</version>
+            </plugin>
+
+            <!-- Cobertura - Test code coverage report. -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.3</version>
+            </plugin>
+
+            <!-- PMD - Generate PMD and CPD reports using the PMD code analysis tool. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <!-- Required to properly link JXR -->
+                    <xrefLocation>${project.reporting.outputDirectory}/../xref-test</xrefLocation>
+                    <sourceEncoding>utf-8</sourceEncoding>
+                    <aggregate>true</aggregate>
+                    <targetJdk>1.5</targetJdk>
+                </configuration>
+            </plugin>
+
+            <!-- FindBugs - Finds potential bugs in your source code -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <xmlOutput>true</xmlOutput>
+                    <effort>Max</effort>
+                </configuration>
+            </plugin>
+
+            <!-- JavaNCSS - Source code metrics -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>javancss-maven-plugin</artifactId>
+                <version>2.0</version>
+            </plugin>
 		</plugins>
 	</build>
 
