@@ -8,9 +8,9 @@
             <div class="row no-pad">
                 <div class="col-xs-12 col-sm-3" id="sidebar">
                     <div class="list-group">
-                        <a href='<c:url value="/report/linuxServerOverviewWebReport" />' class="list-group-item">Linux</a>
-                        <a href='<c:url value="/report/unixServerOverviewWebReport" />' class="list-group-item">Unix</a>
-                        <a href='<c:url value="/report/windowsServerOverviewWebReport" />' class="list-group-item">Windows</a>
+                        <a href='<c:url value="/report/linuxServerOverviewWebReport" />' class="list-group-item<c:if test="${reportId eq 'linuxServerOverviewWebReport'}"> active</c:if>">Linux</a>
+                        <a href='<c:url value="/report/unixServerOverviewWebReport" />' class="list-group-item<c:if test="${reportId eq 'unixServerOverviewWebReport'}"> active</c:if>">Unix</a>
+                        <a href='<c:url value="/report/windowsServerOverviewWebReport" />' class="list-group-item<c:if test="${reportId eq 'windowsServerOverviewWebReport'}"> active</c:if>">Windows</a>
                     </div>
                 </div><!--/.sidebar-->
                 <div class="col-xs-12 col-sm-9">
