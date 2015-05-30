@@ -46,6 +46,7 @@ public class WebReportController implements ApplicationContextAware{
 
 			model.addAttribute("searchFilter", searchFilter);
 			model.addAttribute("report", report.toString());
+			model.addAttribute("reportId", reportId);
 			model.addAttribute("reportUrl", "/report/" + reportId);
 		} catch (BeansException e) {
             e.printStackTrace();
