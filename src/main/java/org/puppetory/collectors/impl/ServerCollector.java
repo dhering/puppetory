@@ -4,6 +4,8 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.apache.commons.configuration.Configuration;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.bson.Document;
 import org.puppetory.collectors.api.Collector;
 import org.puppetory.data.api.DbModelMapper;
@@ -20,19 +22,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 26.05.15
- * Time: 18:07
- * To change this template use File | Settings | File Templates.
- */
 public class ServerCollector implements Collector, InitializingBean{
 
     private Inventory inventory;
     private MongoDatabase database;
     private Configuration configuration;
     private DbModelMapper dbModelMapper;
+    private Log logger;
 
     private String uniqueQualifier = "uuid";
     private String sourceCollectionName;
@@ -40,7 +36,9 @@ public class ServerCollector implements Collector, InitializingBean{
 
     String[] hiddenJson = new String[] {"partitions","processors","os","system_uptime"};
 
-    public ServerCollector() {}
+    public ServerCollector() {
+        logger = LogFactory.getLog(ServerCollector.class);
+    }
 
     @Autowired
     public void setInventory(Inventory inventory) {
@@ -80,11 +78,12 @@ public class ServerCollector implements Collector, InitializingBean{
     @Override
     public void collect() {
         {
-            System.out.println("# collecting servers #");
+            logger.info("starts collecting servers.");
 
             MongoCollection<Document> server = database.getCollection(sourceCollectionName);
 
             FindIterable<Document> documents = server.find();
+            int serverCount = 0;
 
             for(Document document : documents){
                 Component component = new ComponentImpl();
@@ -119,7 +118,10 @@ public class ServerCollector implements Collector, InitializingBean{
                 filter.setQuery(docFilter.toJson());
 
                 inventory.upsert(targetCollectionName, component, filter);
+                serverCount++;
             }
+
+            logger.info("finish collecting of " + serverCount + " server(s).");
         }
     }
 
