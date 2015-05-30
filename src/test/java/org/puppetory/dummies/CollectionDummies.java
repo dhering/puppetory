@@ -28,4 +28,15 @@ public class CollectionDummies {
 
         return new CollectionImpl(components, new FilterImpl());
     }
+
+
+    public static Collection getCollectionWithTwoEntries(){
+
+        Component component = new ComponentImpl(FactDummies.getStructuredFacts());
+        Component component2 = new ComponentImpl(FactDummies.getDeepStructuredFacts());
+
+        List<Component> components = Arrays.asList(new Component[]{component, component2});
+
+        return new CollectionImpl(components, new FilterImpl());
+    }
 }
