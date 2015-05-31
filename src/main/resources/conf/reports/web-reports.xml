@@ -13,17 +13,23 @@
 
     <bean id="linuxServerOverviewWebReport" parent="abstractServerOverviewWebReport">
         <property name="name" value="Linux Server Overview" />
-        <property name="filterString" value="" />
+        <property name="filterString">
+            <value>{operatingsystem:{$in: ["Debian","Ubuntu"]}}</value>
+        </property>
     </bean>
 
     <bean id="unixServerOverviewWebReport" parent="abstractServerOverviewWebReport">
         <property name="name" value="Unix Server Overview" />
-        <property name="filterString" value="" />
+        <property name="filterString">
+            <value>{operatingsystem:{$in: ["HPUX","Solaris"]}}</value>
+        </property>
     </bean>
 
     <bean id="windowsServerOverviewWebReport" parent="abstractServerOverviewWebReport">
         <property name="name" value="Windows Server Overview" />
-        <property name="filterString" value="" />
+        <property name="filterString">
+            <value>{operatingsystem:{$in: ["Windows"]}}</value>
+        </property>
     </bean>
 
 </beans>
