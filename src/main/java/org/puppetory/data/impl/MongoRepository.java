@@ -20,14 +20,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 18.05.15
- * Time: 23:09
- * To change this template use File | Settings | File Templates.
+ * mongoDB repository implementation
  */
-
-//@Profile("production")
 @Service("repository")
 public class MongoRepository implements Repository{
 

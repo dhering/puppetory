@@ -14,11 +14,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 18.05.15
- * Time: 23:17
- * To change this template use File | Settings | File Templates.
+ * model mapper for mongoDB databases
  */
 @Service("dbModelMapper")
 public class PuppetMongoMapper implements DbModelMapper {
@@ -83,7 +79,7 @@ public class PuppetMongoMapper implements DbModelMapper {
         return fact;
     }
 
-    public List<Fact> getFactsFromDocuments(List<Document> documents) {
+    private List<Fact> getFactsFromDocuments(List<Document> documents) {
 
         List<Fact> facts = new ArrayList<Fact>(documents.size());
 
@@ -130,7 +126,7 @@ public class PuppetMongoMapper implements DbModelMapper {
         return document;
     }
 
-    public void addFactToDocument(Fact fact, Document document){
+    private void addFactToDocument(Fact fact, Document document){
 
         if(fact instanceof ListedFact){
             document.put(fact.getName(), getDocumentListFromFacts(((ListedFact) fact).getFacts()));
@@ -150,7 +146,7 @@ public class PuppetMongoMapper implements DbModelMapper {
         }
     }
 
-    public List<Document> getDocumentListFromFacts(List<Fact> facts){
+    private List<Document> getDocumentListFromFacts(List<Fact> facts){
 
         List<Document> list = new LinkedList<Document>();
 

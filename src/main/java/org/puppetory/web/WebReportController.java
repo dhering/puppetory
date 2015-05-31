@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+/**
+ * web report controller to show a web report
+ */
 @Controller
 public class WebReportController implements ApplicationContextAware{
 
@@ -24,7 +27,16 @@ public class WebReportController implements ApplicationContextAware{
 			throws BeansException {
 		this.applicationContext = applicationContext;		
 	}
-	
+
+    /**
+     * Show a web report by the given report id. Use the given search filter to reduce the results.
+     *
+     * @param reportId
+     * @param searchFilter
+     * @param model
+     * @return webReport view name
+     * @throws Exception
+     */
 	@RequestMapping("/report/{reportId}")
 	public String showReport(@PathVariable String reportId,
                              @RequestParam(required = false) String searchFilter,
@@ -56,6 +68,12 @@ public class WebReportController implements ApplicationContextAware{
 		return "webReport";
 	}
 
+    /**
+     * validate if the given search filter has a valid JSON format
+     *
+     * @param searchFilter
+     * @return
+     */
     private boolean validateFilter(String searchFilter){
 
         if(searchFilter == null || searchFilter.isEmpty()){

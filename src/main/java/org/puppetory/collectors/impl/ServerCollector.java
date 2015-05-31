@@ -22,6 +22,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Collector to collect puppet data from the database, optimize the collected data and to
+ * store the new data structure into an other data store.
+ */
 public class ServerCollector implements Collector, InitializingBean{
 
     private Inventory inventory;
@@ -34,6 +38,7 @@ public class ServerCollector implements Collector, InitializingBean{
     private String sourceCollectionName;
     private String targetCollectionName;
 
+    // facts with this name are holding hidden JSON date
     String[] hiddenJson = new String[] {"partitions","processors","os","system_uptime"};
 
     public ServerCollector() {
@@ -61,6 +66,11 @@ public class ServerCollector implements Collector, InitializingBean{
         this.dbModelMapper = dbModelMapper;
     }
 
+    /**
+     * init configuration after all properties are set
+     *
+     * @throws Exception
+     */
     @Override
     public void afterPropertiesSet() throws Exception {
         this.sourceCollectionName = configuration.getString("server.collector.source.collection", "server");
@@ -75,6 +85,9 @@ public class ServerCollector implements Collector, InitializingBean{
         this.uniqueQualifier = uniqueQualifier;
     }
 
+    /**
+     * starts collecting
+     */
     @Override
     public void collect() {
         {
@@ -125,6 +138,16 @@ public class ServerCollector implements Collector, InitializingBean{
         }
     }
 
+    /**
+     * Some facts are storing multiple information on one value field. This method is converting the {@link Document}
+     * into a {@link ListedFact} and split the multiple values into a {@link PersistentTextualFact}.
+     *
+     * All facts are added to the given component.
+     *
+     * @param document
+     * @param component
+     * @param generalizedFacts
+     */
     private void groupMultiValues(Document document, Component component, Set<String> generalizedFacts){
         Set<String> keyset = document.keySet();
         Set<String> groupableFacts = findGroupableFacts(keyset, "_count", generalizedFacts);

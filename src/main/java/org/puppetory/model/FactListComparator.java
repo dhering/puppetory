@@ -5,21 +5,28 @@ import org.puppetory.model.api.Fact;
 import java.util.Comparator;
 
 /**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 26.05.15
- * Time: 23:50
- * To change this template use File | Settings | File Templates.
+ * comparator to compare {@link Fact}s
  */
 public class FactListComparator implements Comparator<Fact>{
     private static Comparator<? super Fact> instance = new FactListComparator();
 
     private FactListComparator(){};
 
+    /**
+     * this comparator is singleton, please call this method to get an instance
+     * @return
+     */
     public static Comparator<? super Fact> getInstance() {
         return instance;
     }
 
+    /**
+     * compare two {@link Fact}s by there names
+     *
+     * @param f1
+     * @param f2
+     * @return
+     */
     @Override
     public int compare(Fact f1, Fact f2) {
 

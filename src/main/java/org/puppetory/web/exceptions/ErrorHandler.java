@@ -9,11 +9,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 29.05.15
- * Time: 23:30
- * To change this template use File | Settings | File Templates.
+ * Central error handler to catch Exceptions in the MCV context and route them to an error page.
+ *
+ * The following methods are catching specified Exceptions to a defined error page. Unknown
+ * exceptions are caught by the root class {@link Exception} and routed to a 500 error page.
  */
 @Controller
 @ControllerAdvice
@@ -23,6 +22,10 @@ public class ErrorHandler {
     public static final String MODEL_KEY_TITLE = "title";
     public static final String MODEL_KEY_MSG = "msg";
 
+    /**
+     * catch errors to show a 400 error page
+     * @return {@link ModelAndView} for an error page
+     */
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(value = BadRequestException.class)
     @RequestMapping("/400")
@@ -34,6 +37,10 @@ public class ErrorHandler {
         return mv;
     }
 
+    /**
+     * catch errors to show a 401 error page
+     * @return {@link ModelAndView} for an error page
+     */
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     @ExceptionHandler(value = UnauthorizedAccessException.class)
     @RequestMapping("/401")
@@ -45,6 +52,10 @@ public class ErrorHandler {
         return mv;
     }
 
+    /**
+     * catch errors to show a 403 error page
+     * @return {@link ModelAndView} for an error page
+     */
     @ResponseStatus(HttpStatus.FORBIDDEN)
     @ExceptionHandler(value = RequestForbiddenException.class)
     @RequestMapping("/403")
@@ -56,6 +67,10 @@ public class ErrorHandler {
         return mv;
     }
 
+    /**
+     * catch errors to show a 404 error page
+     * @return {@link ModelAndView} for an error page
+     */
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(value = ResourceNotFoundException.class)
     @RequestMapping("/404")
@@ -67,6 +82,10 @@ public class ErrorHandler {
         return mv;
     }
 
+    /**
+     * catch errors to show a 500 error page
+     * @return {@link ModelAndView} for an error page
+     */
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(value = Exception.class)
     @RequestMapping("/500")

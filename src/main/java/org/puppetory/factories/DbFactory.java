@@ -10,6 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Arrays;
 
+/**
+ * This factory creates a singleton of a {@link MongoDatabase} by reading the configuration file.
+ *
+ * Set a prefix to store multiple database connections in one configuration file.
+ */
 public class DbFactory implements FactoryBean<MongoDatabase> {
 
     private Configuration config;

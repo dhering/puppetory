@@ -15,11 +15,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 26.05.15
- * Time: 21:47
- * To change this template use File | Settings | File Templates.
+ * create some MongoRepository Mockups
  */
 public class RepositoryDummies {
 

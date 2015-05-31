@@ -7,13 +7,6 @@ import org.puppetory.dummies.FactDummies;
 import org.puppetory.model.api.Component;
 import org.puppetory.model.impl.ComponentImpl;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 21.05.15
- * Time: 22:36
- * To change this template use File | Settings | File Templates.
- */
 public class PuppetMongoMapperTest {
 
     private final Component referenceComponent = new ComponentImpl(FactDummies.getDeepStructuredFacts());

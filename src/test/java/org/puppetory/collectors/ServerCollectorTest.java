@@ -33,13 +33,6 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-/**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 26.05.15
- * Time: 21:31
- * To change this template use File | Settings | File Templates.
- */
 public class ServerCollectorTest {
 
     private Component referenceComponente;

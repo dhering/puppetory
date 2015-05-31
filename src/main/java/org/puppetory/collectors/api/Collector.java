@@ -1,12 +1,12 @@
 package org.puppetory.collectors.api;
 
 /**
- * Created with IntelliJ IDEA.
- * User: dennish
- * Date: 26.05.15
- * Time: 18:06
- * To change this template use File | Settings | File Templates.
+ * Collectors are worker classes to run via a scheduler, collects inventory data and
+ * store it into the database.
  */
 public interface Collector {
+    /**
+     * call this method to start the collecting process
+     */
     public void collect();
 }
