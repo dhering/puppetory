@@ -9,7 +9,7 @@ public class MultipleValueFact implements Fact{
 
     public MultipleValueFact(String name, String[] values) {
         this.name = name;
-        this.values = values;
+        this.values = values.clone();
     }
 
     public String getName() {
@@ -22,24 +22,26 @@ public class MultipleValueFact implements Fact{
 
     public String getValue() {
 
-        String out = "";
+        StringBuffer out = new StringBuffer();
 
         for(int i=0; i<values.length; i++){
             if(i>0){
-                out += ", ";
+                out.append(", ");
             }
-            out += '\'' + values[i] + "\'";
+            out.append('\'');
+            out.append(values[i]);
+            out.append('\'');
         }
 
-        return "[" + out + "]";
+        return "[" + out.toString() + "]";
     }
 
     public String[] getValues() {
-        return values;
+        return values.clone();
     }
 
     public void setValues(String[] values) {
-        this.values = values;
+        this.values = values.clone();
     }
 
     @Override

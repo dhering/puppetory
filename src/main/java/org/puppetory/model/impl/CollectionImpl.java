@@ -40,6 +40,9 @@ public class CollectionImpl implements Collection {
 
     @Override
     public boolean equals(Object obj) {
+        if(obj == null){
+            return false;
+        }
         return this.toString().equals(obj.toString());
     }
 

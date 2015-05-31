@@ -32,6 +32,8 @@ public abstract class TextualReportTemplate implements Report {
 	public void setName(String name) {
 		this.name = name;
 	}
-    
-    
+
+    public Collection getCollection() {
+        return collection;
+    }
 }
