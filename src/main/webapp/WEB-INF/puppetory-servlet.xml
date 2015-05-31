@@ -14,10 +14,10 @@
 
     <mvc:annotation-driven />
 
-    <import resource="conf/database.xml" />
-    <import resource="conf/views.xml" />
-    <import resource="conf/reports/*.xml" />
+    <import resource="classpath:conf/database.xml" />
+    <import resource="classpath:conf/views.xml" />
+    <import resource="classpath:conf/reports/*.xml" />
 
     <task:scheduler id="collectorsScheduler" pool-size="10"/>
-    <import resource="conf/collectors/*.xml" />
+    <import resource="classpath:conf/collectors/*.xml" />
 </beans>
