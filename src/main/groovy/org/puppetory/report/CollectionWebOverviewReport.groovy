@@ -1,5 +1,6 @@
 package org.puppetory.report
 
+import org.puppetory.model.FactListComparator
 import org.puppetory.model.api.Fact
 import org.puppetory.model.impl.MultipleValueFact
 import org.puppetory.model.impl.StructuredFact
@@ -57,12 +58,12 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
 			collection.components.eachWithIndex { component, componentCount ->
 
                 String uuid = component.getFact("uuid").value;
+                String componentName = component.getFact("hostname").value;
 
-				builder.div([class:"panel panel-default"]){
+				builder.div([class:"panel panel-default", id:componentName]){
 					div([class:"panel-heading"]){
-						def nameFact = component.getFact("hostname");
-						yield("${nameFact.value}", true)
-						a([class:"btn btn-default btn-xs pull-right toggle-details", href:"#", role:"button"]){
+						yield("${componentName}", true)
+						a([class:"btn btn-default btn-xs pull-right toggle-details", href:"#"+componentName, role:"button"]){
 							yield("View details <span class=\"caret\"></span>", false)
 						}
 					}
@@ -135,12 +136,14 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
                     }
                 }
             }
+            Collections.sort(selectedFacts, FactListComparator.getInstance());
 
             selectedFacts.eachWithIndex { fact, factCount ->
                 if(toSkip.contains(fact.name)){
 
                 } else if(fact instanceof StructuredFact){
 
+                    Collections.sort(fact.facts, FactListComparator.getInstance());
                     fact.facts.eachWithIndex { subfact, subfactCount ->
                         if(subfactCount == 0){
                             builder.tr(){
