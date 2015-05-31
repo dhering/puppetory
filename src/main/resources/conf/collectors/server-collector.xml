@@ -13,7 +13,7 @@
     <bean id="serverCollector" class="org.puppetory.collectors.impl.ServerCollector" />
 
     <task:scheduled-tasks scheduler="collectorsScheduler">
-        <task:scheduled ref="serverCollector" method="collect" fixed-delay="30000" initial-delay="30000"/>
+        <task:scheduled ref="serverCollector" method="collect" fixed-delay="30000" initial-delay="1000"/>
     </task:scheduled-tasks>
 
 </beans>
