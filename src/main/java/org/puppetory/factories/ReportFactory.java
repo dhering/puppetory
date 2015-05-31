@@ -61,11 +61,13 @@ public class ReportFactory{
 	}
 
     public Report createReport() throws Exception {
-        return createReport(new FilterImpl());
+        return createReport(new FilterImpl(filterString));
     }
 
 	public Report createReport(Filter filter) throws Exception {
-		Collection result = inventory.find(collection, filter);
+        Filter combinedFilter = new FilterImpl(filterString).and(filter);
+
+		Collection result = inventory.find(collection, combinedFilter);
 
 		Report report =  (Report) this.beanConstructor.newInstance(new Object[] { result });
 		report.setName(name);
