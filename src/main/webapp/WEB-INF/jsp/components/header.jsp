@@ -21,8 +21,8 @@
                         <li><a href="/report/windowsServerOverviewWebReport">Windows</a></li>
                     </ul>
                 </li>
-                <li><a href="#about">Clients</a></li>
-                <li><a href="#contact">Infrastructure</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#infrastructure">Infrastructure</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout</a></li>
