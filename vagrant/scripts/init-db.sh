@@ -4,7 +4,7 @@
 
 if [ ! -f /apt-get-install-mongodb ]; then
     mkdir -p /var/lib/mongodb
-    cp /var/puppetory/data/backup/four_server/* /var/lib/mongodb
+    cp /var/puppetory/data/backup/101_server/* /var/lib/mongodb
 
     apt-get -y install mongodb && touch /apt-get-install-mongodb;
 
