@@ -196,6 +196,13 @@
                 <artifactId>javancss-maven-plugin</artifactId>
             </plugin>
 
+            <!-- Apache PMD - Source code analyzer -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.4</version>
+            </plugin>
+
             <!-- Clover - Code Coverage -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
