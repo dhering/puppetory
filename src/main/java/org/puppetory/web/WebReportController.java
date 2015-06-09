@@ -4,75 +4,72 @@ import org.bson.Document;
 import org.puppetory.factories.ReportFactory;
 import org.puppetory.model.api.Report;
 import org.puppetory.model.impl.FilterImpl;
+import org.puppetory.resolver.ReportFactoryResolver;
 import org.puppetory.web.exceptions.ResourceNotFoundException;
-import org.springframework.beans.BeansException;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * web report controller to show a web report
  */
 @Controller
-public class WebReportController implements ApplicationContextAware{
+public class WebReportController{
+    private ReportFactoryResolver reportFactoryResolver;
 
-	private ApplicationContext applicationContext; 
-	
-	@Override
-	public void setApplicationContext(ApplicationContext applicationContext)
-			throws BeansException {
-		this.applicationContext = applicationContext;		
-	}
+    @Autowired
+    public WebReportController(ReportFactoryResolver reportFactoryResolver) {
+        this.reportFactoryResolver = reportFactoryResolver;
+    }
 
     /**
      * Show a web report by the given report id. Use the given search filter to reduce the results.
      *
      * @param reportId
      * @param searchFilter
-     * @param model
+     * @param searchFilter
      * @return webReport view name
      * @throws Exception
      */
 	@RequestMapping("/report/{reportId}")
-	public String showReport(@PathVariable String reportId,
-                             @RequestParam(required = false) String searchFilter,
-                             Model model) throws Exception {
+	public ModelAndView showReport(@PathVariable String reportId,
+                             @RequestParam(required = false) String searchFilter) throws Exception {
 
-		try {
-            ReportFactory reportFactory = (ReportFactory) applicationContext.getBean(reportId);
-            Report report;
-            if(searchFilter == null || searchFilter.isEmpty()){
-                report = reportFactory.createReport();
-            }
-            else if(validateFilter(searchFilter)){
-                report = reportFactory.createReport(new FilterImpl(searchFilter));
-            } else {
-                report = reportFactory.createReport();
-                model.addAttribute("searchMsg", "Invalid search query: '" + searchFilter + "'. <br />" +
-                                "Try to use a format like: '{name: \"searchquery\"}'");
-            }
+        ModelAndView mv = new ModelAndView("webReport");
+        ReportFactory reportFactory = reportFactoryResolver.resolveReportFactory(reportId);
 
-			model.addAttribute("searchFilter", searchFilter);
-			model.addAttribute("report", report.toString());
-			model.addAttribute("reportId", reportId);
-			model.addAttribute("reportUrl", "/report/" + reportId);
-		} catch (BeansException e) {
-            e.printStackTrace();
-			throw new ResourceNotFoundException();
-		}
+        if(reportFactory == null){
+            throw new ResourceNotFoundException("unable to resolve report factory by id: '" + reportId + "'");
+        }
+
+        Report report;
+        if(searchFilter == null || searchFilter.isEmpty()){
+            report = reportFactory.createReport();
+        }
+        else if(validateFilter(searchFilter)){
+            report = reportFactory.createReport(new FilterImpl(searchFilter));
+        } else {
+            report = reportFactory.createReport();
+            mv.addObject("searchMsg", "Invalid search query: '" + searchFilter + "'. <br />" +
+                            "Try to use a format like: '{name: \"searchquery\"}'");
+        }
+
+        mv.addObject("searchFilter", searchFilter);
+        mv.addObject("report", report.toString());
+        mv.addObject("reportId", reportId);
+        mv.addObject("reportUrl", "/report/" + reportId);
 				
-		return "webReport";
+		return mv;
 	}
 
     /**
      * validate if the given search filter has a valid JSON format
      *
      * @param searchFilter
-     * @return
+     * @return true if the filter is valid
      */
     private boolean validateFilter(String searchFilter){
 
@@ -90,6 +87,4 @@ public class WebReportController implements ApplicationContextAware{
 
         return document == null ? false : true;
     }
-
-	
 }
