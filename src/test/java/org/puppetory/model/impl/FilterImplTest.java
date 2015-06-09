@@ -47,7 +47,7 @@ public class FilterImplTest {
 
     @Test
     public void testOrFirstValid(){
-        Filter combined = filter1.and(null);
+        Filter combined = filter1.or(null);
 
         assertEquals("{name:\"foo\"}", combined.getQuery());
     }
