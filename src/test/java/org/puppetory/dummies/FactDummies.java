@@ -17,7 +17,7 @@ public class FactDummies {
 
     /**
      * get list of two {@link TextualFact}
-     * @return
+     * @return list of facts
      */
     public static List<Fact> getTwoFacts(){
         List<Fact> facts = new ArrayList<Fact>(2);
@@ -32,7 +32,7 @@ public class FactDummies {
      * get a list with two {@link TextualFact} and one {@link StructuredFact} within two
      * {@link TextualFact}s.
      *
-     * @return
+     * @return list of facts
      */
     public static List<Fact> getStructuredFacts(){
         List<Fact> facts = new LinkedList<Fact>();
@@ -46,7 +46,7 @@ public class FactDummies {
      * get a list with one {@link ListedFact} within two
      * {@link PersistentTextualFact}s.
      *
-     * @return
+     * @return list of facts
      */
     public static List<Fact>  getListedFacts(){
         List<Fact> facts = new LinkedList<Fact>();
@@ -64,7 +64,7 @@ public class FactDummies {
      * combine the result of {@link #getStructuredFacts()} and {@link #getListedFacts()}
      * into a list.
      *
-     * @return
+     * @return list of facts
      */
     public static List<Fact> getDeepStructuredFacts(){
         List<Fact> facts = getStructuredFacts();

@@ -72,7 +72,7 @@ public class DbFactory implements FactoryBean<MongoDatabase> {
      * @param user
      * @param password
      * @param database
-     * @return
+     * @return credentials or null
      */
     private MongoCredential getCredentials(String user, String password, String database){
 

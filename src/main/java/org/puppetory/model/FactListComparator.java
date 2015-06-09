@@ -14,7 +14,7 @@ public class FactListComparator implements Comparator<Fact>{
 
     /**
      * this comparator is singleton, please call this method to get an instance
-     * @return
+     * @return singleton instance
      */
     public static Comparator<? super Fact> getInstance() {
         return instance;
@@ -25,7 +25,7 @@ public class FactListComparator implements Comparator<Fact>{
      *
      * @param f1
      * @param f2
-     * @return
+     * @return int value
      */
     @Override
     public int compare(Fact f1, Fact f2) {
