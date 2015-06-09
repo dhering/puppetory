@@ -7,7 +7,7 @@ import org.apache.commons.configuration.Configuration;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.bson.Document;
-import org.puppetory.collectors.api.Collector;
+import org.puppetory.collectors.api.PuppetoryCollector;
 import org.puppetory.data.api.DbModelMapper;
 import org.puppetory.model.api.Component;
 import org.puppetory.model.api.Fact;
@@ -26,7 +26,7 @@ import java.util.Set;
  * Collector to collect puppet data from the database, optimize the collected data and to
  * store the new data structure into an other data store.
  */
-public class ServerCollector implements Collector, InitializingBean{
+public class ServerCollector implements PuppetoryCollector, InitializingBean{
 
     private Inventory inventory;
     private MongoDatabase database;
@@ -241,7 +241,7 @@ public class ServerCollector implements Collector, InitializingBean{
      * @param allFactNames
      * @param endsWith
      * @param generalizedFacts
-     * @return
+     * @return set of groupable fact names
      */
     private Set<String> findGroupableFacts(Set<String> allFactNames, String endsWith, Set<String> generalizedFacts){
 
