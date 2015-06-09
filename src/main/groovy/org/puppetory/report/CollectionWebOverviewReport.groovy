@@ -57,7 +57,6 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
 
 			collection.components.eachWithIndex { component, componentCount ->
 
-                String uuid = component.getFact("uuid").value;
                 String componentName = component.getFact("hostname").value;
 
 				builder.div([class:"panel panel-default", id:componentName]){
@@ -72,7 +71,7 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
                         div([role:"tabpanel"]){
                             ul([class:"nav nav-tabs", role:"tablist"]){
                                 tabs.eachWithIndex { tab, index ->
-                                    def id = uuid + "--" + tab.key;
+                                    def id = "tab-" + componentName + "--" + tab.key;
                                     def classes = [role:"presentation"];
                                     if(index==0) classes["class"] = "active";
                                     builder.li(classes){
@@ -83,7 +82,7 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
                                 }
 
                                 li([role:"presentation"]){
-                                    def id = uuid + "--All";
+                                    def id = "tab-" + componentName + "--All";
                                     a([href:"#"+id, "aria-controls":id, role:"tab", "data-toggle":"tab"]){
                                         yield("All", true);
                                     }
@@ -92,7 +91,7 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
 
                             div([class:"tab-content"]){
                                 tabs.eachWithIndex { tab, index ->
-                                    def id = uuid + "--" + tab.key;
+                                    def id = "tab-" + componentName + "--" + tab.key;
                                     def classes = [class:"tab-pane",role:"tabpanel", id:id];
                                     if(index==0) classes["class"] = "tab-pane active";
                                     builder.div(classes){
@@ -100,7 +99,7 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
                                     }
                                 }
 
-                                div([class:"tab-pane", role:"tabpanel", id:uuid + "--All"]){
+                                div([class:"tab-pane", role:"tabpanel", id:"tab-" + componentName + "--All"]){
                                     printTable(builder, component.facts, null);
                                 }
                             }
