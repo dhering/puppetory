@@ -10,7 +10,9 @@
         <property name="propertyPrefix" value="server.collector." />
     </bean>
 
-    <bean id="serverCollector" class="org.puppetory.collectors.impl.ServerCollector" />
+    <bean id="serverCollector" class="org.puppetory.collectors.impl.ServerCollector">
+        <property name="uniqueQualifier" value="hostname" />
+    </bean>
 
     <task:scheduled-tasks scheduler="collectorsScheduler">
         <task:scheduled ref="serverCollector" method="collect" fixed-delay="30000" initial-delay="1000"/>
