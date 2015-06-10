@@ -17,7 +17,9 @@ class CollectionWebOverviewReport extends TextualReportTemplate{
                     operatingsystem:"OS name",
                     operatingsystemrelease:"OS Version",
                     system_uptime: "uptime",
-                    architecture: "architecture"
+                    architecture: "architecture",
+                    lsbdistdescription: "distribution",
+                    lsbdistcodename: "version name"
             ],
             Hardware: [
                     serialnumber: "serial number",
