@@ -28,7 +28,7 @@
     <bean id="windowsServerOverviewWebReport" parent="abstractServerOverviewWebReport">
         <property name="name" value="Windows Server Overview" />
         <property name="filterString">
-            <value>{operatingsystem:{$in: ["Windows"]}}</value>
+            <value>{operatingsystem:{$in: ["Windows", "windows"]}}</value>
         </property>
     </bean>
 
